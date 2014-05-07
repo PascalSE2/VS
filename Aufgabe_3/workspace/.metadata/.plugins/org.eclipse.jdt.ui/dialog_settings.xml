@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="E:\TI5\VS\Aufgabe_3\jfreechart-1.0.17\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="E:\TI5\VS\Aufgabe_3\HAWMeter\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
@@ -54,7 +54,7 @@
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="2" key="pageIndex"/>
+		<item value="3" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

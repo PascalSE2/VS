@@ -8,7 +8,6 @@ package hawmetering;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
-
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.DialShape;
