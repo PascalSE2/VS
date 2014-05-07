@@ -1,0 +1,91 @@
+package test;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
+public class ProcessStarter {
+
+    public static void main(String[] args) {
+//        Byte[] barray = {'e','x','i','t'};
+//        String command = null;
+//        command = "java test2.TestProcess";
+//        String working_dir = System.getProperty("user.dir");
+//        System.out.println(working_dir);
+//        working_dir += "\\bin";
+//        System.out.println(working_dir);
+
+//        builder.directory(new File(working_dir));
+
+//        builder.command(command);
+
+        ProcessBuilder builder = new ProcessBuilder();
+
+        try {
+            builder.command("cmd", "/c", "start", "java", "test2.TestProcess", "prozess1");
+            Process p = builder.start();
+
+            OutputStream stdin = p.getOutputStream ();
+            InputStream stdout = p.getInputStream ();
+
+            BufferedReader reader = new BufferedReader (new InputStreamReader(stdout));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(stdin));
+            String scanString = "";
+            
+            String input ="";
+            input += "\n";
+            writer.write(input);
+            writer.flush();
+            input += "\n";
+            writer.write(input);
+            writer.flush();
+            
+            writer.write("exit \n");
+            writer.write("exit \n");
+            writer.write("exit \n");
+            writer.flush();
+            writer.write("exit \n");
+            writer.write("exit \n");
+            writer.write("exit \n");
+            
+            scanString = reader.readLine();
+            System.out.println(scanString);
+            
+
+//            out.flush();
+
+//            p.destroy();
+            p.waitFor();
+
+            System.out.println("prozess beendet");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
+    private void test() {
+        ProcessBuilder builder = new ProcessBuilder();
+
+            builder.command("cmd", "/c", "java", "ggtProzess.Client_ggT", "-ORBInitialHost", "localhost", "-ORBInitialPort", "1050", "Koordinator1", "Starter 1",
+                    "1", "0", "5");
+
+            try {
+                builder.start();
+                System.out.println("Prozess gestartet!");
+            } catch (IOException e) {
+                e.printStackTrace();
+         
+        }   // TODO Auto-generated method stub
+
+    }
+}

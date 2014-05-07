@@ -1,0 +1,7 @@
+module HelloWorld
+{
+interface Hello
+{
+string sayHello ( in string Name );
+};
+};

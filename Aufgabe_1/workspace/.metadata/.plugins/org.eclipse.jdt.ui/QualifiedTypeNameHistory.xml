@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sun.corba.se.internal.iiop.ORB"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.POAHelper"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.POA"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.POAManagerPackage.AdapterInactive"/>
+<fullyQualifiedTypeName name="HelloWorld.Hello"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.security.utils.HelperNodeList"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.ORB"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.Object"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExtHelper"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExt"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.NameComponent"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.NamingContext"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextHelper"/>
+<fullyQualifiedTypeName name="bank.BankHelper"/>
+<fullyQualifiedTypeName name="server.ShutdownT"/>
+<fullyQualifiedTypeName name="bank.Konto"/>
+<fullyQualifiedTypeName name="bank.TKontolisteHolder"/>
+<fullyQualifiedTypeName name="java.lang.Runtime"/>
+<fullyQualifiedTypeName name="jdk.jfr.events.ThrowablesEvent"/>
+<fullyQualifiedTypeName name="bank.KontoPackage.ENotEnoughMoney"/>
+<fullyQualifiedTypeName name="bank.BankPackage.EKontoAlreadyExists"/>
+<fullyQualifiedTypeName name="monitor.MonitorImpl"/>
+<fullyQualifiedTypeName name="monitor.Monitor"/>
+<fullyQualifiedTypeName name="monitor.MonitorClient"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.concurrent.LinkedBlockingQueue"/>
+<fullyQualifiedTypeName name="bank.Bank"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ConcurrentLinkedQueue"/>
+<fullyQualifiedTypeName name="server.SendMessage"/>
+</qualifiedTypeNameHistroy>

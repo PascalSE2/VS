@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from workspace&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Client/src/koordinator&#x0D;&#x0A;     Client/src/koordinator.KoordinatorPackage&#x0D;&#x0A;     Client/src/koordinator.monitor&#x0D;&#x0A;     ggtProzess.ChannelReader.java" description="Delete elements" element1="=Starter/src&lt;ggtProzess{ChannelReader.java" element2="=Client/src&lt;koordinator.monitor" element3="=Client/src&lt;koordinator.KoordinatorPackage" element4="=Client/src&lt;koordinator" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1399302345214" subPackages="false" version="1.0"/>
+</session>

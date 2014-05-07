@@ -1,0 +1,1 @@
+idjl -fclient bank.idl

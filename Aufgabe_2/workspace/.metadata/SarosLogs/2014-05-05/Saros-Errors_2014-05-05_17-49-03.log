@@ -1,0 +1,29 @@
+WARN  2014-05-05 17:48:41,795 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-05 17:48:41,811 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-05 17:48:54,619 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-05 17:48:54,636 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-05 17:49:10,979 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-05-05 17:49:33,758 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-05 17:50:03,777 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

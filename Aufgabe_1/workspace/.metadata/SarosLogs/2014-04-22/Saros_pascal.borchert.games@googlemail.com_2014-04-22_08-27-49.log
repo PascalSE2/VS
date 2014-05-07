@@ -1,0 +1,740 @@
+INFO  2014-04-22 08:27:43,096 (Saros.java:256) Starting Saros 13.12.6 running:
+  Java Version: 1.8.0
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.9.100.v20131218-1515
+  Operating System: Windows 8.1 (6.3)
+  Hardware Architecture: amd64
+INFO  2014-04-22 08:27:43,126 (XMPPAccountStore.java:103) loaded 1 accounts
+INFO  2014-04-22 08:27:43,151 (PreferenceInitializer.java:53) initializing preference default values
+DEBUG 2014-04-22 08:27:43,159 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@7ea08277, de.fu_berlin.inf.dpp.net.internal.IBBTransport@6401d0a0]
+DEBUG 2014-04-22 08:27:43,194 (StreamServiceManager.java:225) StreamServices added:
+  SendFile
+  AudioService
+  VideoSharing
+DEBUG 2014-04-22 08:27:43,250 (SarosAnnotation.java:112) resetting annotation colors
+WARN  2014-04-22 08:27:43,501 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:27:43,501 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-22 08:27:45,662 (SharedDocumentProvider.java:79) SharedDocumentProvider created by Eclipse
+WARN  2014-04-22 08:27:47,318 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:27:47,318 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-22 08:27:48,463 (WhiteboardManager.java:108) WhiteboardManager instantiated
+DEBUG 2014-04-22 08:27:48,495 (DocumentRecord.java:93) Added Node: attr(139814806848098468) name=svg
+DEBUG 2014-04-22 08:27:48,558 (SarosNet.java:423) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2014-04-22 08:27:48,886 (SarosNet.java:433) found interface addresses: [192.168.56.1, 141.22.91.162, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5, 2002:8d16:5ba2:0:0:0:8d16:5ba2]
+DEBUG 2014-04-22 08:27:48,902 (SarosNet.java:383)  new connection state == CONNECTING
+DEBUG 2014-04-22 08:27:49,433 (SarosNet.java:383) pascal.borchert.games@googlemail.com/SarosC2416BEF new connection state == CONNECTED
+DEBUG 2014-04-22 08:27:49,433 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@7ea08277, de.fu_berlin.inf.dpp.net.internal.IBBTransport@6401d0a0]
+DEBUG 2014-04-22 08:27:49,433 (SkypeManager.java:286) Refreshing Skype username cache...
+WARN  2014-04-22 08:27:59,340 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /141.22.91.162:0
+WARN  2014-04-22 08:27:59,340 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+DEBUG 2014-04-22 08:28:00,598 (DiscoveryManager.java:381) Inserted DiscoveryInfo into Cache for: brede@saros-con.imp.fu-berlin.de/Saros
+WARN  2014-04-22 08:28:30,606 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:28:45,219 (BaseResourceSelectionComposite.java:173) I got the names from the list: 1
+DEBUG 2014-04-22 08:28:45,344 (BaseResourceSelectionComposite.java:149) Remembered checked/grayed items: 0/0 Saved 1 snapshots
+DEBUG 2014-04-22 08:28:46,734 (BaseResourceSelectionComposite.java:149) Remembered checked/grayed items: 90/0 Saved 2 snapshots
+DEBUG 2014-04-22 08:28:47,531 (BaseResourceSelectionComposite.java:149) Remembered checked/grayed items: 165/0 Saved 3 snapshots
+DEBUG 2014-04-22 08:28:48,500 (BaseResourceSelectionComposite.java:149) Remembered checked/grayed items: 250/0 Saved 4 snapshots
+DEBUG 2014-04-22 08:28:49,656 (BaseResourceSelectionComposite.java:271) Storing checked elements (not grayed): /Bank**#**/Bank/bin**#**/Bank/bin/bank**#**/Bank/bin/bank/BankPackage**#**/Bank/bin/bank/BankPackage/EKontoAlreadyExists.class**#**/Bank/bin/bank/BankPackage/EKontoAlreadyExistsHelper.class**#**/Bank/bin/bank/BankPackage/EKontoAlreadyExistsHolder.class**#**/Bank/bin/bank/BankPackage/EKontoNotFound.class**#**/Bank/bin/bank/BankPackage/EKontoNotFoundHelper.class**#**/Bank/bin/bank/BankPackage/EKontoNotFoundHolder.class**#**/Bank/bin/bank/KontoPackage**#**/Bank/bin/bank/KontoPackage/EInvalidAmount.class**#**/Bank/bin/bank/KontoPackage/EInvalidAmountHelper.class**#**/Bank/bin/bank/KontoPackage/EInvalidAmountHolder.class**#**/Bank/bin/bank/KontoPackage/ENotEnoughMoney.class**#**/Bank/bin/bank/KontoPackage/ENotEnoughMoneyHelper.class**#**/Bank/bin/bank/KontoPackage/ENotEnoughMoneyHolder.class**#**/Bank/bin/bank/_BankStub.class**#**/Bank/bin/bank/_KontoStub.class**#**/Bank/bin/bank/_MonitorStub.class**#**/Bank/bin/bank/Bank.class**#**/Bank/bin/bank/BankHelper.class**#**/Bank/bin/bank/BankHolder.class**#**/Bank/bin/bank/BankOperations.class**#**/Bank/bin/bank/BankPOA.class**#**/Bank/bin/bank/Konto.class**#**/Bank/bin/bank/KontoHelper.class**#**/Bank/bin/bank/KontoHolder.class**#**/Bank/bin/bank/KontoOperations.class**#**/Bank/bin/bank/KontoPOA.class**#**/Bank/bin/bank/Monitor.class**#**/Bank/bin/bank/MonitorHelper.class**#**/Bank/bin/bank/MonitorHolder.class**#**/Bank/bin/bank/MonitorOperations.class**#**/Bank/bin/bank/MonitorPOA.class**#**/Bank/bin/bank/TKontolisteHelper.class**#**/Bank/bin/bank/TKontolisteHolder.class**#**/Bank/bin/server**#**/Bank/bin/server/BankImpl.class**#**/Bank/bin/server/BankImpl$1.class**#**/Bank/bin/server/KontoImpl.class**#**/Bank/bin/server/SendMessage.class**#**/Bank/bin/server/Server.class**#**/Bank/bin/server/ShutdownT.class**#**/Bank/bin/bank.idl**#**/Bank/src**#**/Bank/src/bank**#**/Bank/src/bank/BankPackage**#**/Bank/src/bank/BankPackage/EKontoAlreadyExists.java**#**/Bank/src/bank/BankPackage/EKontoAlreadyExistsHelper.java**#**/Bank/src/bank/BankPackage/EKontoAlreadyExistsHolder.java**#**/Bank/src/bank/BankPackage/EKontoNotFound.java**#**/Bank/src/bank/BankPackage/EKontoNotFoundHelper.java**#**/Bank/src/bank/BankPackage/EKontoNotFoundHolder.java**#**/Bank/src/bank/KontoPackage**#**/Bank/src/bank/KontoPackage/EInvalidAmount.java**#**/Bank/src/bank/KontoPackage/EInvalidAmountHelper.java**#**/Bank/src/bank/KontoPackage/EInvalidAmountHolder.java**#**/Bank/src/bank/KontoPackage/ENotEnoughMoney.java**#**/Bank/src/bank/KontoPackage/ENotEnoughMoneyHelper.java**#**/Bank/src/bank/KontoPackage/ENotEnoughMoneyHolder.java**#**/Bank/src/bank/_BankStub.java**#**/Bank/src/bank/_KontoStub.java**#**/Bank/src/bank/_MonitorStub.java**#**/Bank/src/bank/Bank.java**#**/Bank/src/bank/BankHelper.java**#**/Bank/src/bank/BankHolder.java**#**/Bank/src/bank/BankOperations.java**#**/Bank/src/bank/BankPOA.java**#**/Bank/src/bank/Konto.java**#**/Bank/src/bank/KontoHelper.java**#**/Bank/src/bank/KontoHolder.java**#**/Bank/src/bank/KontoOperations.java**#**/Bank/src/bank/KontoPOA.java**#**/Bank/src/bank/Monitor.java**#**/Bank/src/bank/MonitorHelper.java**#**/Bank/src/bank/MonitorHolder.java**#**/Bank/src/bank/MonitorOperations.java**#**/Bank/src/bank/MonitorPOA.java**#**/Bank/src/bank/TKontolisteHelper.java**#**/Bank/src/bank/TKontolisteHolder.java**#**/Bank/src/server**#**/Bank/src/server/BankImpl.java**#**/Bank/src/server/KontoImpl.java**#**/Bank/src/server/SendMessage.java**#**/Bank/src/server/Server.java**#**/Bank/src/server/ShutdownT.java**#**/Bank/src/bank.idl**#**/Bank/.classpath**#**/Bank/.project**#**/Filiale**#**/Filiale/bin**#**/Filiale/bin/bank**#**/Filiale/bin/bank/BankPackage**#**/Filiale/bin/bank/BankPackage/EKontoAlreadyExists.class**#**/Filiale/bin/bank/BankPackage/EKontoAlreadyExistsHelper.class**#**/Filiale/bin/bank/BankPackage/EKontoAlreadyExistsHolder.class**#**/Filiale/bin/bank/BankPackage/EKontoNotFound.class**#**/Filiale/bin/bank/BankPackage/EKontoNotFoundHelper.class**#**/Filiale/bin/bank/BankPackage/EKontoNotFoundHolder.class**#**/Filiale/bin/bank/KontoPackage**#**/Filiale/bin/bank/KontoPackage/EInvalidAmount.class**#**/Filiale/bin/bank/KontoPackage/EInvalidAmountHelper.class**#**/Filiale/bin/bank/KontoPackage/EInvalidAmountHolder.class**#**/Filiale/bin/bank/KontoPackage/ENotEnoughMoney.class**#**/Filiale/bin/bank/KontoPackage/ENotEnoughMoneyHelper.class**#**/Filiale/bin/bank/KontoPackage/ENotEnoughMoneyHolder.class**#**/Filiale/bin/bank/_BankStub.class**#**/Filiale/bin/bank/_KontoStub.class**#**/Filiale/bin/bank/_MonitorStub.class**#**/Filiale/bin/bank/Bank.class**#**/Filiale/bin/bank/BankHelper.class**#**/Filiale/bin/bank/BankHolder.class**#**/Filiale/bin/bank/BankOperations.class**#**/Filiale/bin/bank/Konto.class**#**/Filiale/bin/bank/KontoHelper.class**#**/Filiale/bin/bank/KontoHolder.class**#**/Filiale/bin/bank/KontoOperations.class**#**/Filiale/bin/bank/Monitor.class**#**/Filiale/bin/bank/MonitorHelper.class**#**/Filiale/bin/bank/MonitorHolder.class**#**/Filiale/bin/bank/MonitorOperations.class**#**/Filiale/bin/bank/TKontolisteHelper.class**#**/Filiale/bin/bank/TKontolisteHolder.class**#**/Filiale/bin/client**#**/Filiale/bin/client/Client.class**#**/Filiale/bin/bank.idl**#**/Filiale/src**#**/Filiale/src/bank**#**/Filiale/src/bank/BankPackage**#**/Filiale/src/bank/BankPackage/EKontoAlreadyExists.java**#**/Filiale/src/bank/BankPackage/EKontoAlreadyExistsHelper.java**#**/Filiale/src/bank/BankPackage/EKontoAlreadyExistsHolder.java**#**/Filiale/src/bank/BankPackage/EKontoNotFound.java**#**/Filiale/src/bank/BankPackage/EKontoNotFoundHelper.java**#**/Filiale/src/bank/BankPackage/EKontoNotFoundHolder.java**#**/Filiale/src/bank/KontoPackage**#**/Filiale/src/bank/KontoPackage/EInvalidAmount.java**#**/Filiale/src/bank/KontoPackage/EInvalidAmountHelper.java**#**/Filiale/src/bank/KontoPackage/EInvalidAmountHolder.java**#**/Filiale/src/bank/KontoPackage/ENotEnoughMoney.java**#**/Filiale/src/bank/KontoPackage/ENotEnoughMoneyHelper.java**#**/Filiale/src/bank/KontoPackage/ENotEnoughMoneyHolder.java**#**/Filiale/src/bank/_BankStub.java**#**/Filiale/src/bank/_KontoStub.java**#**/Filiale/src/bank/_MonitorStub.java**#**/Filiale/src/bank/Bank.java**#**/Filiale/src/bank/BankHelper.java**#**/Filiale/src/bank/BankHolder.java**#**/Filiale/src/bank/BankOperations.java**#**/Filiale/src/bank/Konto.java**#**/Filiale/src/bank/KontoHelper.java**#**/Filiale/src/bank/KontoHolder.java**#**/Filiale/src/bank/KontoOperations.java**#**/Filiale/src/bank/Monitor.java**#**/Filiale/src/bank/MonitorHelper.java**#**/Filiale/src/bank/MonitorHolder.java**#**/Filiale/src/bank/MonitorOperations.java**#**/Filiale/src/bank/TKontolisteHelper.java**#**/Filiale/src/bank/TKontolisteHolder.java**#**/Filiale/src/client**#**/Filiale/src/client/Client.java**#**/Filiale/src/bank.idl**#**/Filiale/.classpath**#**/Filiale/.project**#**/Monitor**#**/Monitor/bin**#**/Monitor/bin/bank**#**/Monitor/bin/bank/BankPackage**#**/Monitor/bin/bank/BankPackage/EKontoAlreadyExists.class**#**/Monitor/bin/bank/BankPackage/EKontoAlreadyExistsHelper.class**#**/Monitor/bin/bank/BankPackage/EKontoAlreadyExistsHolder.class**#**/Monitor/bin/bank/BankPackage/EKontoNotFound.class**#**/Monitor/bin/bank/BankPackage/EKontoNotFoundHelper.class**#**/Monitor/bin/bank/BankPackage/EKontoNotFoundHolder.class**#**/Monitor/bin/bank/KontoPackage**#**/Monitor/bin/bank/KontoPackage/EInvalidAmount.class**#**/Monitor/bin/bank/KontoPackage/EInvalidAmountHelper.class**#**/Monitor/bin/bank/KontoPackage/EInvalidAmountHolder.class**#**/Monitor/bin/bank/KontoPackage/ENotEnoughMoney.class**#**/Monitor/bin/bank/KontoPackage/ENotEnoughMoneyHelper.class**#**/Monitor/bin/bank/KontoPackage/ENotEnoughMoneyHolder.class**#**/Monitor/bin/bank/_BankStub.class**#**/Monitor/bin/bank/_KontoStub.class**#**/Monitor/bin/bank/_MonitorStub.class**#**/Monitor/bin/bank/Bank.class**#**/Monitor/bin/bank/BankHelper.class**#**/Monitor/bin/bank/BankHolder.class**#**/Monitor/bin/bank/BankOperations.class**#**/Monitor/bin/bank/BankPOA.class**#**/Monitor/bin/bank/Konto.class**#**/Monitor/bin/bank/KontoHelper.class**#**/Monitor/bin/bank/KontoHolder.class**#**/Monitor/bin/bank/KontoOperations.class**#**/Monitor/bin/bank/KontoPOA.class**#**/Monitor/bin/bank/Monitor.class**#**/Monitor/bin/bank/MonitorHelper.class**#**/Monitor/bin/bank/MonitorHolder.class**#**/Monitor/bin/bank/MonitorOperations.class**#**/Monitor/bin/bank/MonitorPOA.class**#**/Monitor/bin/bank/TKontolisteHelper.class**#**/Monitor/bin/bank/TKontolisteHolder.class**#**/Monitor/bin/monitor**#**/Monitor/bin/monitor/MonitorClient.class**#**/Monitor/bin/monitor/MonitorClient$1.class**#**/Monitor/bin/monitor/MonitorImpl.class**#**/Monitor/bin/monitor/MonitorImpl$1.class**#**/Monitor/bin/bank.idl**#**/Monitor/src**#**/Monitor/src/bank**#**/Monitor/src/bank/BankPackage**#**/Monitor/src/bank/BankPackage/EKontoAlreadyExists.java**#**/Monitor/src/bank/BankPackage/EKontoAlreadyExistsHelper.java**#**/Monitor/src/bank/BankPackage/EKontoAlreadyExistsHolder.java**#**/Monitor/src/bank/BankPackage/EKontoNotFound.java**#**/Monitor/src/bank/BankPackage/EKontoNotFoundHelper.java**#**/Monitor/src/bank/BankPackage/EKontoNotFoundHolder.java**#**/Monitor/src/bank/KontoPackage**#**/Monitor/src/bank/KontoPackage/EInvalidAmount.java**#**/Monitor/src/bank/KontoPackage/EInvalidAmountHelper.java**#**/Monitor/src/bank/KontoPackage/EInvalidAmountHolder.java**#**/Monitor/src/bank/KontoPackage/ENotEnoughMoney.java**#**/Monitor/src/bank/KontoPackage/ENotEnoughMoneyHelper.java**#**/Monitor/src/bank/KontoPackage/ENotEnoughMoneyHolder.java**#**/Monitor/src/bank/_BankStub.java**#**/Monitor/src/bank/_KontoStub.java**#**/Monitor/src/bank/_MonitorStub.java**#**/Monitor/src/bank/Bank.java**#**/Monitor/src/bank/BankHelper.java**#**/Monitor/src/bank/BankHolder.java**#**/Monitor/src/bank/BankOperations.java**#**/Monitor/src/bank/BankPOA.java**#**/Monitor/src/bank/Konto.java**#**/Monitor/src/bank/KontoHelper.java**#**/Monitor/src/bank/KontoHolder.java**#**/Monitor/src/bank/KontoOperations.java**#**/Monitor/src/bank/KontoPOA.java**#**/Monitor/src/bank/Monitor.java**#**/Monitor/src/bank/MonitorHelper.java**#**/Monitor/src/bank/MonitorHolder.java**#**/Monitor/src/bank/MonitorOperations.java**#**/Monitor/src/bank/MonitorPOA.java**#**/Monitor/src/bank/TKontolisteHelper.java**#**/Monitor/src/bank/TKontolisteHolder.java**#**/Monitor/src/monitor**#**/Monitor/src/monitor/MonitorClient.java**#**/Monitor/src/monitor/MonitorImpl.java**#**/Monitor/src/bank.idl**#**/Monitor/.classpath**#**/Monitor/.project**#**
+DEBUG 2014-04-22 08:28:49,672 (BaseResourceSelectionComposite.java:183) Remembering new selection name: -Last selection-
+DEBUG 2014-04-22 08:28:49,672 (BaseResourceSelectionComposite.java:173) I got the names from the list: 1
+DEBUG 2014-04-22 08:28:49,672 (BaseResourceSelectionComposite.java:189) Not adding name to list because already exists: -Last selection-
+INFO  2014-04-22 08:28:49,734 (StatisticManager.java:185) Current feedback settings:
+  Feedback disabled: false
+  Feedback interval: 5
+  Statistic submission allowed: false
+  Pseudonym submission allowed: false
+INFO  2014-04-22 08:28:49,750 (ErrorLogManager.java:259) Current error log settings:
+  Error log submission allowed: false
+  Full Error log submission allowed: false
+DEBUG 2014-04-22 08:28:49,766 (WhiteboardManager.java:55) Session Started, set Color: RGB {186, 220, 81}
+DEBUG 2014-04-22 08:28:49,766 (ColorUtils.java:21) set foregroundcolor RGB {186, 220, 81}
+INFO  2014-04-22 08:28:50,016 (StatisticManager.java:164) Session count: 15
+INFO  2014-04-22 08:28:50,031 (ParticipantCollector.java:138) Session started: Current number of participants: 1
+DEBUG 2014-04-22 08:28:50,031 (ActivityHandler.java:104) activity dispatcher started
+DEBUG 2014-04-22 08:28:50,047 (SXEController.java:120) SXE (6481): initialize session at inviter side
+DEBUG 2014-04-22 08:28:50,062 (ConsistencyAction.java:168) Inconsistency indicator goes: off
+DEBUG 2014-04-22 08:28:50,062 (SarosProjectMapper.java:193) added project P/Bank with ID 504674426 [completely shared:true]
+DEBUG 2014-04-22 08:28:50,062 (EditorManager.java:396) Konto.java
+DEBUG 2014-04-22 08:28:50,094 (SharedProjectDecorator.java:98) updating project decoration for all shared projects
+DEBUG 2014-04-22 08:28:50,094 (SarosProjectMapper.java:193) added project P/Monitor with ID 1064207894 [completely shared:true]
+DEBUG 2014-04-22 08:28:50,125 (EditorManager.java:396) Konto.java
+DEBUG 2014-04-22 08:28:50,125 (SharedProjectDecorator.java:98) updating project decoration for all shared projects
+DEBUG 2014-04-22 08:28:50,125 (SarosProjectMapper.java:193) added project P/Filiale with ID 334094545 [completely shared:true]
+DEBUG 2014-04-22 08:28:50,141 (EditorManager.java:396) Konto.java
+DEBUG 2014-04-22 08:28:50,156 (SharedProjectDecorator.java:98) updating project decoration for all shared projects
+INFO  2014-04-22 08:28:50,156 (SarosSessionManager.java:264) session started
+ERROR 2014-04-22 08:28:50,172 (RosterUtils.java:506) discovery for service 'googlemail.com' failed
+feature-not-implemented(501)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:604)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:570)
+	at de.fu_berlin.inf.dpp.net.util.RosterUtils.getMultiUserChatService(RosterUtils.java:504)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getMUCService(MUCNegotiationManager.java:149)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getOwnPreferences(MUCNegotiationManager.java:106)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.MultiUserChatService.createChat(MultiUserChatService.java:95)
+	at de.fu_berlin.inf.dpp.ui.widgets.chat.ChatRoomsComposite$3$2.run(ChatRoomsComposite.java:169)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:28:50,203 (MultiUserChatService.java:122) Joining MUC...
+WARN  2014-04-22 08:28:50,203 (MultiUserChatService.java:125) MUC service is not available, aborting connection request
+DEBUG 2014-04-22 08:28:58,988 (OutgoingSessionNegotiation.java:123) OSN [remote side: brede@saros-con.imp.fu-berlin.de] : starting invitation
+DEBUG 2014-04-22 08:28:58,988 (OutgoingSessionNegotiation.java:230) OSN [remote side: brede@saros-con.imp.fu-berlin.de] : checking Saros support
+DEBUG 2014-04-22 08:28:58,988 (OutgoingSessionNegotiation.java:242) OSN [remote side: brede@saros-con.imp.fu-berlin.de] :  remote contact offers Saros support
+DEBUG 2014-04-22 08:28:58,988 (OutgoingSessionNegotiation.java:259) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : checking version compatibility
+DEBUG 2014-04-22 08:28:59,378 (OutgoingSessionNegotiation.java:289) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : Saros versions are compatible
+DEBUG 2014-04-22 08:28:59,378 (OutgoingSessionNegotiation.java:303) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : sending invitation
+DEBUG 2014-04-22 08:28:59,378 (OutgoingSessionNegotiation.java:329) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : waiting for invitation acknowledgement
+DEBUG 2014-04-22 08:28:59,706 (OutgoingSessionNegotiation.java:340) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : invitation acknowledged
+DEBUG 2014-04-22 08:28:59,706 (OutgoingSessionNegotiation.java:349) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : waiting for peer to accept the invitation
+DEBUG 2014-04-22 08:29:02,160 (OutgoingSessionNegotiation.java:360) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : invitation accepted
+DEBUG 2014-04-22 08:29:02,160 (OutgoingSessionNegotiation.java:370) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : waiting for client's session parameters
+DEBUG 2014-04-22 08:29:02,160 (OutgoingSessionNegotiation.java:390) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : received client's session parameters
+ERROR 2014-04-22 08:29:02,300 (RosterUtils.java:506) discovery for service 'googlemail.com' failed
+feature-not-implemented(501)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:604)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:570)
+	at de.fu_berlin.inf.dpp.net.util.RosterUtils.getMultiUserChatService(RosterUtils.java:504)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getMUCService(MUCNegotiationManager.java:149)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getOwnPreferences(MUCNegotiationManager.java:106)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager$1.considerClientPreferences(MUCNegotiationManager.java:67)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.determineSessionParameters(OutgoingSessionNegotiation.java:412)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.start(OutgoingSessionNegotiation.java:193)
+	at de.fu_berlin.inf.dpp.ui.eventhandler.NegotiationHandler$OutgoingInvitationJob.run(NegotiationHandler.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+DEBUG 2014-04-22 08:29:02,300 (OutgoingSessionNegotiation.java:438) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : sending updated session negotiation data
+DEBUG 2014-04-22 08:29:02,300 (OutgoingSessionNegotiation.java:445) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : sent updated session negotiation data
+DEBUG 2014-04-22 08:29:02,300 (OutgoingSessionNegotiation.java:455) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : waiting for remote side to start its Saros session
+DEBUG 2014-04-22 08:29:02,769 (OutgoingSessionNegotiation.java:466) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : remote side started its Saros session
+DEBUG 2014-04-22 08:29:02,769 (DataTransferManager.java:387) currently used IP addresses for Socks5Proxy: [192.168.56.1, 141.22.91.162, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5, 2002:8d16:5ba2:0:0:0:8d16:5ba2]
+INFO  2014-04-22 08:29:02,769 (DataTransferManager.java:392) establishing connection to brede@saros-con.imp.fu-berlin.de from pascal.borchert.games@googlemail.com/SarosC2416BEF using SOCKS5
+DEBUG 2014-04-22 08:29:02,769 (ByteStreamTransport.java:44) establishing bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:29:02,769 (Socks5Transport.java:505) [SOCKS5] establishing new connection to brede@saros-con.imp.fu-berlin.de/Saros with local proxy enabled (Port 7777). 
+DEBUG 2014-04-22 08:29:04,050 (ByteStreamTransport.java:71) received request to establish a SOCKS5 bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:29:04,050 (Socks5Transport.java:325) [SOCKS5] receiving response connection from brede@saros-con.imp.fu-berlin.de/Saros with local proxy enabled (Port 7777). 
+WARN  2014-04-22 08:29:08,628 (Socks5Transport.java:550) [SOCKS5] could not connect to brede@saros-con.imp.fu-berlin.de/Saros because: item-not-found(404) Could not establish socket with any provided host. Waiting for peer to connect ...
+WARN  2014-04-22 08:29:15,256 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR 2014-04-22 08:29:17,413 (ByteStreamTransport.java:104) could not establish bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+Could not establish socket with any provided host: item-not-found(404) Could not establish socket with any provided host
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.cancelRequest(Socks5BytestreamRequest.java:277)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.accept(Socks5BytestreamRequest.java:247)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.accept(Socks5BytestreamRequest.java:34)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.handleResponse(Socks5Transport.java:329)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.acceptRequest(Socks5Transport.java:483)
+	at de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1.incomingBytestreamRequest(ByteStreamTransport.java:76)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.processRequest(InitiationListener.java:91)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.access$000(InitiationListener.java:37)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener$1.run(InitiationListener.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR 2014-04-22 08:29:38,650 (DataTransferManager.java:399) [brede@saros-con.imp.fu-berlin.de/Saros]  failed to connect using de.fu_berlin.inf.dpp.net.internal.Socks5Transport@7ea08277: [SOCKS5] waiting for a response session timed out (30000ms) and could not establish a connection from this side, too:
+java.io.IOException: [SOCKS5] waiting for a response session timed out (30000ms) and could not establish a connection from this side, too:
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.establishBinaryChannel(Socks5Transport.java:578)
+	at de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport.connect(ByteStreamTransport.java:47)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.connectInternal(DataTransferManager.java:396)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.connect(DataTransferManager.java:296)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.start(OutgoingSessionNegotiation.java:201)
+	at de.fu_berlin.inf.dpp.ui.eventhandler.NegotiationHandler$OutgoingInvitationJob.run(NegotiationHandler.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: item-not-found(404) Could not establish socket with any provided host
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:54)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:469)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:83)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.establishBinaryChannel(Socks5Transport.java:524)
+	... 6 more
+INFO  2014-04-22 08:29:38,650 (DataTransferManager.java:392) establishing connection to brede@saros-con.imp.fu-berlin.de from pascal.borchert.games@googlemail.com/SarosC2416BEF using IBB
+DEBUG 2014-04-22 08:29:38,650 (ByteStreamTransport.java:44) establishing bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:29:38,994 (DataTransferManager.java:141) bytestream connection changed IBB [to: brede@saros-con.imp.fu-berlin.de/Saros|inc: false|id: saros-main-session]
+DEBUG 2014-04-22 08:29:38,994 (OutgoingSessionNegotiation.java:481) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : synchronizing user list
+DEBUG 2014-04-22 08:29:38,994 (BinaryChannelConnection.java:88) IBB [brede@saros-con.imp.fu-berlin.de/Saros]  ReceiverThread started.
+DEBUG 2014-04-22 08:29:38,994 (UserInformationHandler.java:147) synchronizing user list (A)[pascal.borchert.games, brede], (R) [] with user(s) [brede]
+DEBUG 2014-04-22 08:29:39,932 (UserInformationHandler.java:199) received user list confirmation from: brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:29:39,932 (UserInformationHandler.java:206) synchronized user list with user(s) [brede]
+DEBUG 2014-04-22 08:29:39,932 (ChangeColorManager.java:254) reassigning color IDs for the current session users
+DEBUG 2014-04-22 08:29:39,932 (ChangeColorManager.java:343) color conflict resolve result = RESOLVED
+DEBUG 2014-04-22 08:29:39,932 (ChangeColorManager.java:347) new color assignment: {pascal.borchert.games=2, brede=0}
+DEBUG 2014-04-22 08:29:39,932 (ChangeColorManager.java:566) updating color id set: [pascal.borchert.games@googlemail.com/SarosA255DAF3, brede@saros-con.imp.fu-berlin.de/Saros]
+DEBUG 2014-04-22 08:29:39,947 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [ChangeColorActivityDO(source: pascal.borchert.games@googlemail.com/SarosC2416BEF, affected: pascal.borchert.games@googlemail.com/SarosC2416BEF, colorID: 2)]
+INFO  2014-04-22 08:29:39,947 (ParticipantCollector.java:69) [brede@saros-con.imp.fu-berlin.de/Saros] joined - session now contains 2 users
+INFO  2014-04-22 08:29:39,947 (SarosSession.java:460) user [brede@saros-con.imp.fu-berlin.de/Saros]  joined session
+DEBUG 2014-04-22 08:29:39,963 (OutgoingSessionNegotiation.java:491) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : added [brede@saros-con.imp.fu-berlin.de/Saros]  to the current session, colorID: 2
+DEBUG 2014-04-22 08:29:40,682 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [ChangeColorActivityDO(source: pascal.borchert.games@googlemail.com/SarosC2416BEF, affected: brede@saros-con.imp.fu-berlin.de/Saros, colorID: 0)]
+DEBUG 2014-04-22 08:29:41,276 (OutgoingSessionNegotiation.java:510) OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : session negotiation finished
+DEBUG 2014-04-22 08:29:41,307 (SXEOutgoingSynchronizationProcess.java:49) SXE(6481)  send state-offer to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:29:41,307 (SarosSXETransmitter.java:149) SXE send state-offer to brede@saros-con.imp.fu-berlin.de/Saros waiting for [accept-state, refuse-state]
+DEBUG 2014-04-22 08:29:41,354 (DataTransferManager.java:387) currently used IP addresses for Socks5Proxy: [192.168.56.1, 141.22.91.162, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5, 2002:8d16:5ba2:0:0:0:8d16:5ba2]
+INFO  2014-04-22 08:29:41,354 (DataTransferManager.java:392) establishing connection to brede@saros-con.imp.fu-berlin.de from pascal.borchert.games@googlemail.com/SarosC2416BEF using SOCKS5
+DEBUG 2014-04-22 08:29:41,354 (ByteStreamTransport.java:44) establishing bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:29:41,354 (Socks5Transport.java:505) [SOCKS5] establishing new connection to brede@saros-con.imp.fu-berlin.de/Saros with local proxy enabled (Port 7777). 
+DEBUG 2014-04-22 08:29:42,479 (ByteStreamTransport.java:71) received request to establish a SOCKS5 bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:29:42,479 (Socks5Transport.java:325) [SOCKS5] receiving response connection from brede@saros-con.imp.fu-berlin.de/Saros with local proxy enabled (Port 7777). 
+WARN  2014-04-22 08:29:45,260 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:29:46,151 (Socks5Transport.java:550) [SOCKS5] could not connect to brede@saros-con.imp.fu-berlin.de/Saros because: item-not-found(404) Could not establish socket with any provided host. Waiting for peer to connect ...
+ERROR 2014-04-22 08:29:55,841 (ByteStreamTransport.java:104) could not establish bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+Could not establish socket with any provided host: item-not-found(404) Could not establish socket with any provided host
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.cancelRequest(Socks5BytestreamRequest.java:277)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.accept(Socks5BytestreamRequest.java:247)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamRequest.accept(Socks5BytestreamRequest.java:34)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.handleResponse(Socks5Transport.java:329)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.acceptRequest(Socks5Transport.java:483)
+	at de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport$1.incomingBytestreamRequest(ByteStreamTransport.java:76)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.processRequest(InitiationListener.java:91)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener.access$000(InitiationListener.java:37)
+	at org.jivesoftware.smackx.bytestreams.socks5.InitiationListener$1.run(InitiationListener.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:30:15,268 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR 2014-04-22 08:30:16,174 (DataTransferManager.java:399) [brede@saros-con.imp.fu-berlin.de/Saros]  failed to connect using de.fu_berlin.inf.dpp.net.internal.Socks5Transport@7ea08277: [SOCKS5] waiting for a response session timed out (30000ms) and could not establish a connection from this side, too:
+java.io.IOException: [SOCKS5] waiting for a response session timed out (30000ms) and could not establish a connection from this side, too:
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.establishBinaryChannel(Socks5Transport.java:578)
+	at de.fu_berlin.inf.dpp.net.internal.ByteStreamTransport.connect(ByteStreamTransport.java:47)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.connectInternal(DataTransferManager.java:396)
+	at de.fu_berlin.inf.dpp.net.internal.DataTransferManager.sendData(DataTransferManager.java:244)
+	at de.fu_berlin.inf.dpp.net.internal.XMPPTransmitter.sendToSessionUser(XMPPTransmitter.java:89)
+	at de.fu_berlin.inf.dpp.net.internal.XMPPTransmitter.sendToSessionUser(XMPPTransmitter.java:65)
+	at de.fu_berlin.inf.dpp.whiteboard.net.SarosSXETransmitter.sendWithoutDispatch(SarosSXETransmitter.java:134)
+	at de.fu_berlin.inf.dpp.whiteboard.net.SarosSXETransmitter.sendAndAwait(SarosSXETransmitter.java:160)
+	at de.fu_berlin.inf.dpp.whiteboard.sxe.net.SXEOutgoingSynchronizationProcess.start(SXEOutgoingSynchronizationProcess.java:56)
+	at de.fu_berlin.inf.dpp.whiteboard.net.WhiteboardManager$1.postOutgoingInvitationCompleted(WhiteboardManager.java:82)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.postOutgoingInvitationCompleted(SarosSessionManager.java:674)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.start(OutgoingSessionNegotiation.java:209)
+	at de.fu_berlin.inf.dpp.ui.eventhandler.NegotiationHandler$OutgoingInvitationJob.run(NegotiationHandler.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: item-not-found(404) Could not establish socket with any provided host
+	at org.jivesoftware.smack.util.SyncPacketSend.getReply(SyncPacketSend.java:54)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:469)
+	at org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager.establishSession(Socks5BytestreamManager.java:83)
+	at de.fu_berlin.inf.dpp.net.internal.Socks5Transport.establishBinaryChannel(Socks5Transport.java:524)
+	... 13 more
+INFO  2014-04-22 08:30:16,174 (DataTransferManager.java:392) establishing connection to brede@saros-con.imp.fu-berlin.de from pascal.borchert.games@googlemail.com/SarosC2416BEF using IBB
+DEBUG 2014-04-22 08:30:16,174 (ByteStreamTransport.java:44) establishing bytestream connection to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:30:16,471 (DataTransferManager.java:141) bytestream connection changed IBB [to: brede@saros-con.imp.fu-berlin.de/Saros|inc: false|id: default]
+DEBUG 2014-04-22 08:30:16,471 (BinaryChannelConnection.java:88) IBB [brede@saros-con.imp.fu-berlin.de/Saros]  ReceiverThread started.
+DEBUG 2014-04-22 08:30:17,627 (SXEOutgoingSynchronizationProcess.java:62) SXE(6481) brede@saros-con.imp.fu-berlin.de/Saros accepted state-offer
+DEBUG 2014-04-22 08:30:17,627 (SXEOutgoingSynchronizationProcess.java:81) SXE(6481) Sending state to brede@saros-con.imp.fu-berlin.de/Saros
+DEBUG 2014-04-22 08:30:17,627 (SXEOutgoingSynchronizationProcess.java:83) Send message: de.fu_berlin.inf.dpp.whiteboard.sxe.net.SXEMessage@4406b3c1: from: null, to: brede@saros-con.imp.fu-berlin.de/Saros, msgId: 1messageTyp: statemessage: [new name=svg visible=true ns=http://www.w3.org/2000/svg type=element version=0 rid=139814806848098468, ]
+DEBUG 2014-04-22 08:30:17,627 (CancelableProcess.java:321) process OSN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] exit status: OK
+INFO  2014-04-22 08:30:18,190 (ProjectNegotiationObservable.java:61) This is ProjectNegotiation number 1 in this session. There are 0 process(es) in this session
+DEBUG 2014-04-22 08:30:18,283 (OutgoingProjectNegotiation.java:198) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : sending file list
+DEBUG 2014-04-22 08:30:18,940 (OutgoingProjectNegotiation.java:232) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : waiting for remote file list
+DEBUG 2014-04-22 08:30:25,096 (OutgoingProjectNegotiation.java:250) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : remote file list has been received
+DEBUG 2014-04-22 08:30:25,096 (OutgoingProjectNegotiation.java:295) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : stopping users [pascal.borchert.games, brede]
+DEBUG 2014-04-22 08:30:25,112 (EditorManager.java:1836) Lock all editors
+DEBUG 2014-04-22 08:30:25,112 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [StopActivityDO(id: 08302596-6354033119517921521, type: LOCKREQUEST, state: INITIATED, initiator: pascal.borchert.games@googlemail.com/SarosC2416BEF, affected user: brede@saros-con.imp.fu-berlin.de/Saros, src: pascal.borchert.games@googlemail.com/SarosC2416BEF)]
+DEBUG 2014-04-22 08:30:25,112 (StopManager.java:348) Waiting for acknowledgment [brede@saros-con.imp.fu-berlin.de/Saros] 
+DEBUG 2014-04-22 08:30:25,112 (StopManager.java:242) added StartHandle (pascal.borchert.games, 08302596-9220714818283320898, startable) to resulting handles.
+DEBUG 2014-04-22 08:30:26,331 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [StopActivityDO(id: 08302596-6354033119517921521, type: LOCKREQUEST, state: ACKNOWLEDGED, initiator: pascal.borchert.games@googlemail.com/SarosC2416BEF, affected user: brede@saros-con.imp.fu-berlin.de/Saros, src: brede@saros-con.imp.fu-berlin.de/Saros)]
+DEBUG 2014-04-22 08:30:26,346 (StopManager.java:367) Acknowledgment arrived [brede@saros-con.imp.fu-berlin.de/Saros] 
+DEBUG 2014-04-22 08:30:26,346 (StopManager.java:242) added StartHandle (brede, 08302596-6354033119517921521, startable) to resulting handles.
+INFO  2014-04-22 08:30:27,409 (SarosSession.java:466) user brede started queuing projects and can receive IResourceActivities
+DEBUG 2014-04-22 08:30:27,409 (OutgoingProjectNegotiation.java:341) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : creating archive(s)
+DEBUG 2014-04-22 08:30:27,409 (EditorManager.java:1452) .saveText File Konto.java does not need to be saved
+DEBUG 2014-04-22 08:30:27,471 (FileZipper.java:200) created archive C:\Users\Pascal\AppData\Local\Temp\334094545&&&&5268725622299585700.zip I/O: [22,2 kB in < 1 s at 1,5 MB/s]
+DEBUG 2014-04-22 08:30:27,487 (FileZipper.java:200) created archive C:\Users\Pascal\AppData\Local\Temp\504674426&&&&3327471615887524360.zip I/O: [28,8 kB in < 1 s at 1,8 MB/s]
+DEBUG 2014-04-22 08:30:27,502 (FileZipper.java:200) created archive C:\Users\Pascal\AppData\Local\Temp\1064207894&&&&2510284007067139292.zip I/O: [26,1 kB in < 1 s at 1,7 MB/s]
+DEBUG 2014-04-22 08:30:27,502 (OutgoingProjectNegotiation.java:326) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : restarting user [pascal.borchert.games@googlemail.com/SarosC2416BEF] 
+DEBUG 2014-04-22 08:30:27,502 (StartHandle.java:60) Called start on pascal.borchert.games
+DEBUG 2014-04-22 08:30:27,518 (StopManager.java:412) StartHandle (pascal.borchert.games, 08302596-9220714818283320898, not startable) couldn't be removed because it doesn't exist any more.
+DEBUG 2014-04-22 08:30:27,518 (EditorManager.java:1838) Unlock all editors
+DEBUG 2014-04-22 08:30:27,518 (OutgoingProjectNegotiation.java:326) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : restarting user [brede@saros-con.imp.fu-berlin.de/Saros] 
+DEBUG 2014-04-22 08:30:27,518 (StartHandle.java:60) Called start on brede
+DEBUG 2014-04-22 08:30:27,518 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [StopActivityDO(id: 08302596-6354033119517921521, type: UNLOCKREQUEST, state: INITIATED, initiator: pascal.borchert.games@googlemail.com/SarosC2416BEF, affected user: brede@saros-con.imp.fu-berlin.de/Saros, src: pascal.borchert.games@googlemail.com/SarosC2416BEF)]
+DEBUG 2014-04-22 08:30:27,518 (FileZipper.java:200) created archive C:\Users\Pascal\AppData\Local\Temp\SarosSyncArchive7337423439699808656.zip I/O: [77,7 kB in < 1 ms at 77,7 MB/s]
+DEBUG 2014-04-22 08:30:27,518 (OutgoingProjectNegotiation.java:432) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : sending archive
+DEBUG 2014-04-22 08:30:28,581 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [StopActivityDO(id: 08302596-6354033119517921521, type: UNLOCKREQUEST, state: ACKNOWLEDGED, initiator: pascal.borchert.games@googlemail.com/SarosC2416BEF, affected user: brede@saros-con.imp.fu-berlin.de/Saros, src: brede@saros-con.imp.fu-berlin.de/Saros)]
+DEBUG 2014-04-22 08:30:41,960 (OutgoingProjectNegotiation.java:449) OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] : archive send
+INFO  2014-04-22 08:30:41,960 (SarosSession.java:486) user brede now has Projects and can process IResourceActivities
+DEBUG 2014-04-22 08:30:41,960 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426])]
+DEBUG 2014-04-22 08:30:42,772 (CancelableProcess.java:321) process OPN [remote side: brede@saros-con.imp.fu-berlin.de/Saros] exit status: OK
+DEBUG 2014-04-22 08:30:43,210 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [EditorActivityDO(type: ACTIVATED, path: null)]
+DEBUG 2014-04-22 08:30:43,381 (ActivitySequencer.java:529) send (003) [brede@saros-con.imp.fu-berlin.de/Saros] [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426]), ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426], range: (0,7)), TextSelectionActivityDO(offset: 0, length:0, src: pascal.borchert.games@googlemail.com/SarosC2416BEF, path: SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426])]
+WARN  2014-04-22 08:30:45,616 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:31:15,635 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:31:35,135 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426])]
+DEBUG 2014-04-22 08:31:35,869 (ActivitySequencer.java:586) rcvd (004) brede@saros-con.imp.fu-berlin.de/Saros: [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426]), EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426]), TextSelectionActivityDO(offset: 0, length:0, src: brede@saros-con.imp.fu-berlin.de/Saros, path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426]), ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], range: (0,46))]
+DEBUG 2014-04-22 08:31:36,463 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], range: (29,71))]
+DEBUG 2014-04-22 08:31:37,276 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], range: (32,75))]
+DEBUG 2014-04-22 08:31:40,151 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], range: (27,69))]
+DEBUG 2014-04-22 08:31:40,838 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], range: (12,54))]
+DEBUG 2014-04-22 08:31:41,791 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], range: (22,64))]
+DEBUG 2014-04-22 08:31:42,916 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426])]
+DEBUG 2014-04-22 08:31:43,557 (ActivitySequencer.java:586) rcvd (002) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], range: (22,64)), TextSelectionActivityDO(offset: 2204, length:0, src: brede@saros-con.imp.fu-berlin.de/Saros, path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426])]
+WARN  2014-04-22 08:31:45,651 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:32:15,667 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:32:45,683 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:33:15,699 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:33:45,715 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:34:15,718 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:34:45,734 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:35:15,751 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:35:45,766 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:36:15,782 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:36:45,798 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:37:11,755 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426])]
+DEBUG 2014-04-22 08:37:12,489 (ActivitySequencer.java:586) rcvd (004) brede@saros-con.imp.fu-berlin.de/Saros: [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426]), EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426]), TextSelectionActivityDO(offset: 0, length:0, src: brede@saros-con.imp.fu-berlin.de/Saros, path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426]), ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (0,43))]
+DEBUG 2014-04-22 08:37:14,380 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (6,48))]
+DEBUG 2014-04-22 08:37:14,958 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (16,58))]
+DEBUG 2014-04-22 08:37:15,567 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (21,63))]
+WARN  2014-04-22 08:37:15,801 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:37:16,176 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (36,78))]
+DEBUG 2014-04-22 08:37:16,770 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (46,89))]
+DEBUG 2014-04-22 08:37:17,364 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (52,94))]
+DEBUG 2014-04-22 08:37:17,973 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (57,99))]
+DEBUG 2014-04-22 08:37:28,583 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [EditorActivityDO(type: ACTIVATED, path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426])]
+DEBUG 2014-04-22 08:37:29,177 (ActivitySequencer.java:586) rcvd (002) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (57,99)), TextSelectionActivityDO(offset: 2658, length:0, src: brede@saros-con.imp.fu-berlin.de/Saros, path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426])]
+DEBUG 2014-04-22 08:37:29,770 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (72,114))]
+DEBUG 2014-04-22 08:37:31,333 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (97,140))]
+DEBUG 2014-04-22 08:37:31,958 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (92,135))]
+DEBUG 2014-04-22 08:37:37,114 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (87,130))]
+DEBUG 2014-04-22 08:37:37,708 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (72,114))]
+DEBUG 2014-04-22 08:37:38,317 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (67,109))]
+DEBUG 2014-04-22 08:37:39,239 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (41,84))]
+DEBUG 2014-04-22 08:37:39,833 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (51,94))]
+WARN  2014-04-22 08:37:45,817 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:38:15,833 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:38:45,849 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-22 08:39:15,865 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:39:43,850 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (46,89))]
+DEBUG 2014-04-22 08:39:44,444 (ActivitySequencer.java:586) rcvd (001) brede@saros-con.imp.fu-berlin.de/Saros: [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], range: (11,53))]
+DEBUG 2014-04-22 08:44:08,812 (EditorListener.java:236) Viewport changed: 0+7
+DEBUG 2014-04-22 08:44:08,812 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426], range: (0,7))]
+DEBUG 2014-04-22 08:44:08,859 (EditorListener.java:236) Viewport changed: 0+8
+DEBUG 2014-04-22 08:44:08,937 (EditorListener.java:236) Viewport changed: 0+9
+DEBUG 2014-04-22 08:44:08,984 (EditorListener.java:236) Viewport changed: 0+10
+DEBUG 2014-04-22 08:44:09,015 (EditorListener.java:236) Viewport changed: 0+11
+DEBUG 2014-04-22 08:44:09,046 (EditorListener.java:236) Viewport changed: 0+12
+DEBUG 2014-04-22 08:44:09,093 (EditorListener.java:236) Viewport changed: 0+13
+DEBUG 2014-04-22 08:44:09,109 (EditorListener.java:236) Viewport changed: 0+14
+DEBUG 2014-04-22 08:44:09,437 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426], range: (0,14))]
+DEBUG 2014-04-22 08:44:13,187 (EditorListener.java:236) Viewport changed: 0+11
+DEBUG 2014-04-22 08:44:13,187 (ActivitySequencer.java:529) send (001) [brede@saros-con.imp.fu-berlin.de/Saros] [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426], range: (0,11))]
+DEBUG 2014-04-22 08:44:13,203 (EditorListener.java:236) Viewport changed: 0+8
+DEBUG 2014-04-22 08:44:13,781 (ActivitySequencer.java:529) send (004) [brede@saros-con.imp.fu-berlin.de/Saros] [ViewportActivityDO(path:SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426], range: (0,8)), ChecksumActivityDO(path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], hash: 1429533912, length: 2505, jupiterTimestamp: [0,0]), ChecksumActivityDO(path: SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426], hash: 2081823002, length: 306, jupiterTimestamp: [0,0]), ChecksumActivityDO(path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], hash: 1126886541, length: 6128, jupiterTimestamp: [0,0])]
+DEBUG 2014-04-22 08:44:33,328 (SarosSessionManager.java:332) terminating all running negotiation processes
+WARN  2014-04-22 08:44:33,328 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-22 08:44:33,328 (SarosSessionManager.java:339) Leave message sent.
+WARN  2014-04-22 08:44:33,328 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-22 08:44:33,328 (ActivityHandler.java:112) activity dispatcher stopped
+DEBUG 2014-04-22 08:44:33,328 (FollowModeCollector.java:177) Processing follow mode changes took 0.0 s
+INFO  2014-04-22 08:44:33,328 (FeedbackManager.java:105) Session lasted 15 min 43 s
+INFO  2014-04-22 08:44:33,328 (FeedbackManager.java:120) Sessions until next survey: 2
+INFO  2014-04-22 08:44:33,328 (ParticipantCollector.java:149) Session ended: Current number of participants: 2
+DEBUG 2014-04-22 08:44:33,375 (StatisticManager.java:330) Session statistic:
+  auto.followmode.enabled=false
+  data_transfer.IBB.average_throughput_kbs=0.4
+  data_transfer.IBB.number_of_events=269
+  data_transfer.IBB.total_size_kb=61
+  data_transfer.IBB.total_time_ms=154429
+  eclipse.version=3.9.100.v20131218-1515
+  feedback.disabled=false
+  feedback.survey.interval=5
+  followmode.time.percent=0
+  followmode.time.total=0.0
+  followmode.toggles=0
+  gesture.count=0
+  java.version=1.8.0
+  jumped.count=0
+  jumped.driver.count=0
+  jumped.observer.count=0
+  observer.selection.count.witnessed=0
+  observer.selection.count=0
+  os.name=Windows 8.1
+  random.user.id=2014-03-28_12-35-18_513098426
+  role.1.duration=15.72
+  role.1=write_access
+  role.changes=0
+  role.driver.duration=15.72
+  role.driver.percent=100
+  role.observer.duration=0.0
+  role.observer.percent=0
+  saros.version=13.12.6
+  session.count=15
+  session.id=2009849454
+  session.local.start=2014-04-22T06:44:33Z
+  session.shared.project.complete.count=3
+  session.shared.project.partial.count=0
+  session.shared.project.partial.files.count=0
+  session.time.users.1.percent=5
+  session.time.users.1=0.83
+  session.time.users.2.percent=95
+  session.time.users.2=14.89
+  session.time=15.72
+  session.users.total=2
+  textedits.chars=0
+  textedits.count=0
+  textedits.nonparallel.chars=0
+  textedits.nonparallel.percent=0
+  textedits.pastes.chars=0
+  textedits.pastes=0
+  user.is.host=true
+  voip.session.count=0
+  voip.time.percent=0
+  voip.time.total=0.0
+INFO  2014-04-22 08:44:33,375 (StatisticManager.java:244) User does not allow to submit session statistics
+DEBUG 2014-04-22 08:44:33,375 (EditorManager.java:1838) Unlock all editors
+WARN  2014-04-22 08:44:33,687 (ActivitySequencer.java:419) cannot send activity to brede because it is currently not registers, dropped activity: ChecksumActivityDO(path: SPathDataObject [editorType=txt, path=src/server/KontoImpl.java, projectID=504674426], hash: 1429533912, length: 2505, jupiterTimestamp: [0,0])
+WARN  2014-04-22 08:44:33,687 (ActivitySequencer.java:419) cannot send activity to brede because it is currently not registers, dropped activity: ChecksumActivityDO(path: SPathDataObject [editorType=txt, path=src/bank/Konto.java, projectID=504674426], hash: 2081823002, length: 306, jupiterTimestamp: [0,0])
+WARN  2014-04-22 08:44:33,687 (ActivitySequencer.java:419) cannot send activity to brede because it is currently not registers, dropped activity: ChecksumActivityDO(path: SPathDataObject [editorType=txt, path=src/bank/_KontoStub.java, projectID=504674426], hash: 1126886541, length: 6128, jupiterTimestamp: [0,0])
+DEBUG 2014-04-22 08:44:34,141 (BinaryChannelConnection.java:98) IBB [brede@saros-con.imp.fu-berlin.de/Saros]  connection closed remotely:no stream data available
+DEBUG 2014-04-22 08:44:34,265 (SharedProjectDecorator.java:92) clearing project decoration for all shared projects
+INFO  2014-04-22 08:44:34,281 (SarosSessionManager.java:353) session stopped
+WARN  2014-04-22 08:44:36,422 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:36,422 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,547 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,562 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,562 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,562 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,609 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,609 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,625 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,625 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,703 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,703 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,719 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-22 08:44:49,719 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-22 08:44:49,859 (SarosNet.java:383) pascal.borchert.games@googlemail.com/SarosC2416BEF new connection state == DISCONNECTING
+DEBUG 2014-04-22 08:44:49,984 (BinaryChannelConnection.java:98) IBB [brede@saros-con.imp.fu-berlin.de/Saros]  connection closed remotely:no stream data available
+WARN  2014-04-22 08:44:50,156 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@54c2500c, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:289)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:44:50,313 (SarosNet.java:383)  new connection state == NOT_CONNECTED
+WARN  2014-04-22 08:44:50,313 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@4c321c19, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:293)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-22 08:44:50,313 (UPnPServiceImpl.java:295) deleting existing port mappings
+ERROR 2014-04-22 08:44:50,313 (Utils.java:177) Internal Error:
+java.lang.RuntimeException: java.lang.InterruptedException
+	at org.jivesoftware.smack.PacketCollector.nextResult(PacketCollector.java:138)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:550)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.util.concurrent.ArrayBlockingQueue.poll(Unknown Source)
+	at org.jivesoftware.smack.PacketCollector.nextResult(PacketCollector.java:135)
+	... 10 more
+ERROR 2014-04-22 08:44:50,313 (Utils.java:178) Original caller:
+StackTrace:
+	at de.fu_berlin.inf.dpp.util.Utils.wrapSafe(Utils.java:169)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:322)
+	at de.fu_berlin.inf.dpp.ui.model.roster.RosterEntryElement.isSarosSupported(RosterEntryElement.java:146)
+	at de.fu_berlin.inf.dpp.ui.model.roster.RosterEntryElement.getImage(RosterEntryElement.java:112)
+	at de.fu_berlin.inf.dpp.ui.model.TreeLabelProvider.update(TreeLabelProvider.java:28)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:152)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:953)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1033)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:485)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2167)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2748)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1923)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1930)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1898)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1855)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1841)
+	at org.eclipse.jface.viewers.StructuredViewer$7.run(StructuredViewer.java:1508)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1506)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:544)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1465)
+	at org.eclipse.jface.viewers.StructuredViewer.removeFilter(StructuredViewer.java:1605)
+	at de.fu_berlin.inf.dpp.ui.widgets.viewer.rosterSession.BuddySessionDisplayComposite$2$2.run(BuddySessionDisplayComposite.java:151)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)

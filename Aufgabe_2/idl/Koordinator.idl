@@ -1,0 +1,52 @@
+
+module koordinator {
+	
+	#include "monitor.idl"
+	
+	enum NachrichtenTyp {MARKER, GGT, TERMINIERUNG};
+	
+	struct Nachricht{
+	NachrichtenTyp typ;
+	long ggt;
+	long sequenz;
+	boolean terminierung;
+	};
+
+   interface ggT_Prozess {
+	void startBerechnung();
+	void setLinkerNachbar(in ggT_Prozess linker_nachbar);
+	void setRechterNachbar(in ggT_Prozess rechter_nachbar);
+	ggT_Prozess getLinkerNachbar();
+	ggT_Prozess getRechterNachbar();
+	void sendBroadcast(in Nachricht msg);
+	void addRechterChannel(in Nachricht msg);
+	void addLinkerChannel(in Nachricht msg);
+	void set_ggT(in long ggt);
+	void setMonitor(in monitor::Monitor m);
+	void exit();
+  };
+  
+  interface Starter {
+	void start_ggT_Prozess(in long min_delay, in long max_delay, in long anz);
+	void destroy(in long id);
+	void destroyAll();
+	void setMonitor(in monitor::Monitor m);
+	void exit();
+  };
+  
+  typedef sequence<string> StarterListe;
+  
+  interface Koordinator {
+	exception EKoordinatorInUse{ string s; };
+    void ggT_ProzessAnmeldung( in string name_id, in ggT_Prozess p);
+    void ggT_ProzessAbmeldung( in string name_id );
+	void starterAnmeldung( in string name ,in Starter p);
+	void starterAbmeldung( in string name );
+	void meldeTerminierungsStatus( in string name_id, in Nachricht msg);
+	void startBerechnung(in long min, in long max, in long min_delay, in long max_delay, in long terminierungs_periode, in long ggt) raises( EKoordinatorInUse);
+	StarterListe getStarterListe();
+	void setMonitor(in monitor::Monitor m);
+	void exit();
+  };
+ 
+};

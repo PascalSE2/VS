@@ -1,0 +1,106 @@
+INFO  2014-04-25 15:15:28,919 (Saros.java:256) Starting Saros 13.12.6 running:
+  Java Version: 1.8.0
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.9.100.v20131218-1515
+  Operating System: Windows 8.1 (6.3)
+  Hardware Architecture: amd64
+INFO  2014-04-25 15:15:28,953 (XMPPAccountStore.java:103) loaded 1 accounts
+INFO  2014-04-25 15:15:28,982 (PreferenceInitializer.java:53) initializing preference default values
+DEBUG 2014-04-25 15:15:28,990 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@c1fa7d4, de.fu_berlin.inf.dpp.net.internal.IBBTransport@7a93b263]
+DEBUG 2014-04-25 15:15:29,029 (StreamServiceManager.java:225) StreamServices added:
+  SendFile
+  AudioService
+  VideoSharing
+DEBUG 2014-04-25 15:15:29,085 (SarosAnnotation.java:112) resetting annotation colors
+WARN  2014-04-25 15:15:29,333 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-25 15:15:29,391 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-25 15:15:31,625 (SharedDocumentProvider.java:79) SharedDocumentProvider created by Eclipse
+WARN  2014-04-25 15:15:34,980 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-25 15:15:34,995 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-25 15:15:36,870 (WhiteboardManager.java:108) WhiteboardManager instantiated
+DEBUG 2014-04-25 15:15:36,941 (DocumentRecord.java:93) Added Node: attr(139843173691198763) name=svg
+DEBUG 2014-04-25 15:15:37,388 (SarosNet.java:423) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2014-04-25 15:15:37,596 (SarosNet.java:433) found interface addresses: [192.168.56.1, 141.22.91.162, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5, 2002:8d16:5ba2:0:0:0:8d16:5ba2]
+DEBUG 2014-04-25 15:15:37,748 (SarosNet.java:383)  new connection state == CONNECTING
+DEBUG 2014-04-25 15:15:39,033 (SarosNet.java:383) pascal.borchert.games@googlemail.com/Saros4F3F3A9D new connection state == CONNECTED
+DEBUG 2014-04-25 15:15:39,034 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@c1fa7d4, de.fu_berlin.inf.dpp.net.internal.IBBTransport@7a93b263]
+DEBUG 2014-04-25 15:15:39,035 (SkypeManager.java:286) Refreshing Skype username cache...
+WARN  2014-04-25 15:15:48,287 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-04-25 15:15:48,287 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /141.22.91.162:0
+WARN  2014-04-25 15:16:10,676 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-25 15:16:40,707 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-25 16:02:44,082 (DiscoveryManager.java:101) clearing cache entry of contact gabrielwilde@gmail.com/MessagingAe01cc205 but cache entry is empty (a discovery is still running or the last one failed)
+ERROR 2014-04-25 16:02:44,099 (SarosNet.java:95) XMPP connection error: 
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(Unknown Source)
+	at sun.security.ssl.AppInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.read1(Unknown Source)
+	at java.io.BufferedReader.read(Unknown Source)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:316)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:46)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:72)
+ERROR 2014-04-25 16:02:44,104 (SarosNet.java:385)  new connection state == ERROR
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(Unknown Source)
+	at sun.security.ssl.AppInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.read1(Unknown Source)
+	at java.io.BufferedReader.read(Unknown Source)
+	at org.xmlpull.mxp1.MXParser.fillBuf(MXParser.java:2992)
+	at org.xmlpull.mxp1.MXParser.more(MXParser.java:3046)
+	at org.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1144)
+	at org.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:316)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:46)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:72)
+DEBUG 2014-04-25 16:02:44,113 (SarosNet.java:383)  new connection state == NOT_CONNECTED
+WARN  2014-05-05 12:43:16,253 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-05 12:43:16,409 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-05 12:43:17,597 (UPnPServiceImpl.java:295) deleting existing port mappings

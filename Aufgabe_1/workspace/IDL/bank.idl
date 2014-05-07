@@ -1,0 +1,41 @@
+// IDL fuer das Bank-Projekt.
+// Version SS 2014
+
+module bank {
+
+  interface Konto {
+    exception ENotEnoughMoney{ string s;};
+    exception EInvalidAmount{ string s; };
+    readonly attribute double kontostand; //Kontostand
+    readonly attribute string kontonr; //Kontonummer
+    void einzahlen( in double betrag ) raises( EInvalidAmount );
+    void auszahlen( in double betrag ) raises( EInvalidAmount, ENotEnoughMoney );
+    void transfer( in double betrag, in Konto toKonto ) raises( EInvalidAmount );
+  };
+
+  interface Monitor {
+    void meldung( in string msg );
+    //Damit kann die Bank den Monitor beenden.
+    void exit();
+  };
+
+  typedef sequence<Konto> TKontoliste;
+
+  interface Bank {
+    exception EKontoNotFound{ string s;};
+    exception EKontoAlreadyExists{ string s;};
+    //holt die aktuelle Kontoliste, Rückgabewert soll die Gesamtzahl der Konten angeben
+    long getKontoliste( out TKontoliste kontoliste );
+    Konto neu( in string kontonr ) raises( EKontoAlreadyExists );
+    void loeschen( in string kontonr ) raises( EKontoNotFound );
+    Konto hole( in string kontonr ) raises( EKontoNotFound );
+
+    void monitorHinzufuegen( in Monitor theMonitor );
+    void monitorEntfernen( in Monitor theMonitor );
+
+    //Dient zum Beenden der Bankanwendung. Sorgt dafuer, dass die Bank und alle registrierten Monitore beendet werden.
+    void exit();
+  };
+
+
+};

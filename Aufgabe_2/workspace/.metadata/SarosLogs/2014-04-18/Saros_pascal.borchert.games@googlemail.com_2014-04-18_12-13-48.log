@@ -1,0 +1,432 @@
+INFO  2014-04-18 12:13:39,276 (Saros.java:256) Starting Saros 13.12.6 running:
+  Java Version: 1.8.0
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.9.100.v20131218-1515
+  Operating System: Windows 8.1 (6.3)
+  Hardware Architecture: amd64
+INFO  2014-04-18 12:13:39,337 (XMPPAccountStore.java:103) loaded 1 accounts
+INFO  2014-04-18 12:13:39,365 (PreferenceInitializer.java:53) initializing preference default values
+DEBUG 2014-04-18 12:13:39,373 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@12aa4996, de.fu_berlin.inf.dpp.net.internal.IBBTransport@18eec010]
+DEBUG 2014-04-18 12:13:39,427 (StreamServiceManager.java:225) StreamServices added:
+  SendFile
+  AudioService
+  VideoSharing
+DEBUG 2014-04-18 12:13:39,475 (SarosAnnotation.java:112) resetting annotation colors
+WARN  2014-04-18 12:13:39,738 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-18 12:13:39,763 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-18 12:13:42,012 (SharedDocumentProvider.java:79) SharedDocumentProvider created by Eclipse
+WARN  2014-04-18 12:13:44,567 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-18 12:13:44,574 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-04-18 12:13:45,572 (WhiteboardManager.java:108) WhiteboardManager instantiated
+DEBUG 2014-04-18 12:13:45,609 (DocumentRecord.java:93) Added Node: attr(139781602560429432) name=svg
+DEBUG 2014-04-18 12:13:45,912 (SarosNet.java:423) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2014-04-18 12:13:46,268 (SarosNet.java:433) found interface addresses: [192.168.56.1, 192.168.178.42, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5]
+DEBUG 2014-04-18 12:13:46,285 (SarosNet.java:383)  new connection state == CONNECTING
+DEBUG 2014-04-18 12:13:46,963 (StunServiceImpl.java:173) discovered public WAN-IP: 2.240.211.64 through interface 192.168.178.42
+DEBUG 2014-04-18 12:13:47,460 (SarosNet.java:383) pascal.borchert.games@googlemail.com/SarosA0398880 new connection state == CONNECTED
+DEBUG 2014-04-18 12:13:47,460 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@12aa4996, de.fu_berlin.inf.dpp.net.internal.IBBTransport@18eec010]
+DEBUG 2014-04-18 12:13:47,461 (SkypeManager.java:286) Refreshing Skype username cache...
+WARN  2014-04-18 12:13:56,832 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-04-18 12:14:18,755 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:14:48,791 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+INFO  2014-04-18 12:14:51,614 (StatisticManager.java:185) Current feedback settings:
+  Feedback disabled: false
+  Feedback interval: 5
+  Statistic submission allowed: false
+  Pseudonym submission allowed: false
+INFO  2014-04-18 12:14:51,622 (ErrorLogManager.java:259) Current error log settings:
+  Error log submission allowed: false
+  Full Error log submission allowed: false
+DEBUG 2014-04-18 12:14:51,867 (WhiteboardManager.java:55) Session Started, set Color: RGB {141, 206, 231}
+DEBUG 2014-04-18 12:14:51,883 (ColorUtils.java:21) set foregroundcolor RGB {141, 206, 231}
+INFO  2014-04-18 12:14:51,893 (StatisticManager.java:164) Session count: 14
+INFO  2014-04-18 12:14:51,894 (ParticipantCollector.java:138) Session started: Current number of participants: 1
+DEBUG 2014-04-18 12:14:51,911 (ConsistencyAction.java:168) Inconsistency indicator goes: off
+DEBUG 2014-04-18 12:14:51,912 (ActivityHandler.java:104) activity dispatcher started
+DEBUG 2014-04-18 12:14:51,913 (SXEController.java:120) SXE (2575): initialize session at inviter side
+DEBUG 2014-04-18 12:14:51,921 (SarosProjectMapper.java:193) added project P/Client with ID 324758374 [completely shared:true]
+DEBUG 2014-04-18 12:14:51,922 (EditorAPI.java:324) IWorkbenchPage.getEditorReferences() returned IEditorPart which needs to be restored: Server.java
+ERROR 2014-04-18 12:14:52,041 (RosterUtils.java:506) discovery for service 'googlemail.com' failed
+feature-not-implemented(501)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:604)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:570)
+	at de.fu_berlin.inf.dpp.net.util.RosterUtils.getMultiUserChatService(RosterUtils.java:504)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getMUCService(MUCNegotiationManager.java:149)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getOwnPreferences(MUCNegotiationManager.java:106)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.MultiUserChatService.createChat(MultiUserChatService.java:95)
+	at de.fu_berlin.inf.dpp.ui.widgets.chat.ChatRoomsComposite$3$2.run(ChatRoomsComposite.java:169)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-18 12:14:52,045 (EditorAPI.java:324) IWorkbenchPage.getEditorReferences() returned IEditorPart which needs to be restored: client.java
+DEBUG 2014-04-18 12:14:52,046 (MultiUserChatService.java:122) Joining MUC...
+WARN  2014-04-18 12:14:52,046 (MultiUserChatService.java:125) MUC service is not available, aborting connection request
+DEBUG 2014-04-18 12:14:52,155 (EditorAPI.java:324) IWorkbenchPage.getEditorReferences() returned IEditorPart which needs to be restored: Client_ggT.java
+DEBUG 2014-04-18 12:14:52,253 (EditorAPI.java:324) IWorkbenchPage.getEditorReferences() returned IEditorPart which needs to be restored: Client_Starter.java
+DEBUG 2014-04-18 12:14:52,346 (EditorAPI.java:324) IWorkbenchPage.getEditorReferences() returned IEditorPart which needs to be restored: StarterImpl.java
+DEBUG 2014-04-18 12:14:52,443 (EditorAPI.java:324) IWorkbenchPage.getEditorReferences() returned IEditorPart which needs to be restored: ggT_ProzessImpl.java
+DEBUG 2014-04-18 12:14:52,554 (EditorAPI.java:324) IWorkbenchPage.getEditorReferences() returned IEditorPart which needs to be restored: ChannelReader.java
+DEBUG 2014-04-18 12:14:52,643 (EditorManager.java:396) Client_Starter.java
+DEBUG 2014-04-18 12:14:52,644 (EditorManager.java:396) Client_ggT.java
+DEBUG 2014-04-18 12:14:52,645 (EditorManager.java:396) Server.java
+DEBUG 2014-04-18 12:14:52,646 (EditorManager.java:396) KoordinatorImpl.java
+DEBUG 2014-04-18 12:14:52,646 (EditorManager.java:396) client.java
+DEBUG 2014-04-18 12:14:52,647 (EditorManager.java:396) ggT_ProzessImpl.java
+DEBUG 2014-04-18 12:14:52,647 (EditorManager.java:396) ChannelReader.java
+DEBUG 2014-04-18 12:14:52,648 (EditorManager.java:396) StarterImpl.java
+DEBUG 2014-04-18 12:14:52,649 (SharedProjectDecorator.java:98) updating project decoration for all shared projects
+INFO  2014-04-18 12:14:52,650 (SarosSessionManager.java:264) session started
+DEBUG 2014-04-18 12:14:52,738 (OutgoingSessionNegotiation.java:123) OSN [remote side: gabrielwilde@gmail.com] : starting invitation
+DEBUG 2014-04-18 12:14:52,747 (OutgoingSessionNegotiation.java:230) OSN [remote side: gabrielwilde@gmail.com] : checking Saros support
+DEBUG 2014-04-18 12:14:53,898 (EditorListener.java:236) Viewport changed: 85+0
+WARN  2014-04-18 12:15:18,794 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-AChromeExtensionw9B1FE27C server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:15:22,774 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.getSupportingPresence(DiscoveryManager.java:279)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.checkAvailability(OutgoingSessionNegotiation.java:233)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.start(OutgoingSessionNegotiation.java:179)
+	at de.fu_berlin.inf.dpp.ui.eventhandler.NegotiationHandler$OutgoingInvitationJob.run(NegotiationHandler.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+WARN  2014-04-18 12:15:48,796 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailwA172D434 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:15:52,776 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-AChromeExtensionw9B1FE27C server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.getSupportingPresence(DiscoveryManager.java:279)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.checkAvailability(OutgoingSessionNegotiation.java:233)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.start(OutgoingSessionNegotiation.java:179)
+	at de.fu_berlin.inf.dpp.ui.eventhandler.NegotiationHandler$OutgoingInvitationJob.run(NegotiationHandler.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+DEBUG 2014-04-18 12:16:10,024 (SarosSessionManager.java:332) terminating all running negotiation processes
+DEBUG 2014-04-18 12:16:10,025 (CancelableProcess.java:154) process OSN [remote side: gabrielwilde@gmail.com] was cancelled by the local side, error: none
+WARN  2014-04-18 12:16:18,798 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailwA172D434 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR 2014-04-18 12:16:20,024 (Saros.java:353) could not shutdown Saros gracefully
+WARN  2014-04-18 12:16:20,031 (SarosSessionManager.java:335) there are still running negotiation processes
+ERROR 2014-04-18 12:16:20,035 (SarosSessionManager.java:710) error in notifying listener of session ending: 
+java.lang.NullPointerException
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:144)
+	at de.fu_berlin.inf.dpp.ui.actions.RemoveUserAction$2.sessionEnding(RemoveUserAction.java:61)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.sessionEnding(SarosSessionManager.java:708)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:337)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:333)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-18 12:16:20,037 (SarosSessionManager.java:339) Leave message sent.
+DEBUG 2014-04-18 12:16:20,038 (ActivityHandler.java:112) activity dispatcher stopped
+DEBUG 2014-04-18 12:16:20,040 (FollowModeCollector.java:177) Processing follow mode changes took 0.0 s
+INFO  2014-04-18 12:16:20,041 (FeedbackManager.java:105) Session lasted 1 min 28 s
+INFO  2014-04-18 12:16:20,042 (ParticipantCollector.java:149) Session ended: Current number of participants: 1
+DEBUG 2014-04-18 12:16:20,095 (StatisticManager.java:330) Session statistic:
+  auto.followmode.enabled=false
+  eclipse.version=3.9.100.v20131218-1515
+  feedback.disabled=false
+  feedback.survey.interval=5
+  followmode.time.percent=0
+  followmode.time.total=0.0
+  followmode.toggles=0
+  gesture.count=0
+  java.version=1.8.0
+  jumped.count=0
+  jumped.driver.count=0
+  jumped.observer.count=0
+  observer.selection.count.witnessed=0
+  observer.selection.count=0
+  os.name=Windows 8.1
+  random.user.id=2014-03-28_12-35-18_513098426
+  role.1.duration=1.47
+  role.1=write_access
+  role.changes=0
+  role.driver.duration=1.47
+  role.driver.percent=100
+  role.observer.duration=0.0
+  role.observer.percent=0
+  saros.version=13.12.6
+  session.count=14
+  session.id=295919670
+  session.local.start=2014-04-18T10:16:20Z
+  session.shared.project.complete.count=1
+  session.shared.project.partial.count=0
+  session.shared.project.partial.files.count=0
+  session.time.users.1.percent=100
+  session.time.users.1=1.47
+  session.time=1.47
+  session.users.total=1
+  textedits.chars=0
+  textedits.count=0
+  textedits.nonparallel.chars=0
+  textedits.nonparallel.percent=0
+  textedits.pastes.chars=0
+  textedits.pastes=0
+  user.is.host=true
+  voip.session.count=0
+  voip.time.percent=0
+  voip.time.total=0.0
+INFO  2014-04-18 12:16:20,097 (StatisticManager.java:244) User does not allow to submit session statistics
+WARN  2014-04-18 12:16:20,101 (SWTUtils.java:193) could not execute runnable de.fu_berlin.inf.dpp.editor.EditorManager$2$1@5a2f8784, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:194)
+	at de.fu_berlin.inf.dpp.editor.EditorManager$2.unblock(EditorManager.java:205)
+	at de.fu_berlin.inf.dpp.synchronize.StopManager.lockSession(StopManager.java:390)
+	at de.fu_berlin.inf.dpp.synchronize.StopManager.sessionStopped(StopManager.java:517)
+	at de.fu_berlin.inf.dpp.synchronize.StopManager.stop(StopManager.java:563)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.doLifecycleMethod(StartableLifecycleStrategy.java:101)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stopComponent(StartableLifecycleStrategy.java:113)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stop(StartableLifecycleStrategy.java:126)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.stop(AbstractInjectionFactory.java:88)
+	at org.picocontainer.behaviors.AbstractBehavior.stop(AbstractBehavior.java:179)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.stop(Stored.java:141)
+	at org.picocontainer.behaviors.Stored.stop(Stored.java:118)
+	at org.picocontainer.DefaultPicoContainer.stopAdapters(DefaultPicoContainer.java:1036)
+	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:791)
+	at de.fu_berlin.inf.dpp.project.internal.SarosSession.stop(SarosSession.java:625)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:342)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:333)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:16:20,144 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.actions.StoppedAction$3@1cabfcb7, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.actions.StoppedAction.setUnblockEnabled(StoppedAction.java:80)
+	at de.fu_berlin.inf.dpp.ui.actions.StoppedAction$1$1.setValue(StoppedAction.java:52)
+	at de.fu_berlin.inf.dpp.ui.actions.StoppedAction$1$1.setValue(StoppedAction.java:1)
+	at de.fu_berlin.inf.dpp.util.ObservableValue.setValue(ObservableValue.java:89)
+	at de.fu_berlin.inf.dpp.util.ObservableValue.setValue(ObservableValue.java:73)
+	at de.fu_berlin.inf.dpp.synchronize.StopManager.lockSession(StopManager.java:392)
+	at de.fu_berlin.inf.dpp.synchronize.StopManager.sessionStopped(StopManager.java:517)
+	at de.fu_berlin.inf.dpp.synchronize.StopManager.stop(StopManager.java:563)
+	at sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.doLifecycleMethod(StartableLifecycleStrategy.java:101)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stopComponent(StartableLifecycleStrategy.java:113)
+	at org.picocontainer.lifecycle.StartableLifecycleStrategy.stop(StartableLifecycleStrategy.java:126)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.stop(AbstractInjectionFactory.java:88)
+	at org.picocontainer.behaviors.AbstractBehavior.stop(AbstractBehavior.java:179)
+	at org.picocontainer.behaviors.Stored$RealComponentLifecycle.stop(Stored.java:141)
+	at org.picocontainer.behaviors.Stored.stop(Stored.java:118)
+	at org.picocontainer.DefaultPicoContainer.stopAdapters(DefaultPicoContainer.java:1036)
+	at org.picocontainer.DefaultPicoContainer.stop(DefaultPicoContainer.java:791)
+	at de.fu_berlin.inf.dpp.project.internal.SarosSession.stop(SarosSession.java:625)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:342)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:333)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:16:20,147 (SWTUtils.java:193) could not execute runnable de.fu_berlin.inf.dpp.editor.EditorManager$4$2@b048714, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTSync(SWTUtils.java:194)
+	at de.fu_berlin.inf.dpp.editor.EditorManager$4.sessionEnded(EditorManager.java:330)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.sessionEnded(SarosSessionManager.java:718)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:349)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:333)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:16:20,151 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.views.SarosView$11@16bcdbc7, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.views.SarosView.clearNotifications(SarosView.java:644)
+	at de.fu_berlin.inf.dpp.ui.eventhandler.HostLeftAloneInSessionHandler$1.sessionEnded(HostLeftAloneInSessionHandler.java:46)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.sessionEnded(SarosSessionManager.java:718)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:349)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:333)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-18 12:16:20,152 (SharedProjectDecorator.java:92) clearing project decoration for all shared projects
+WARN  2014-04-18 12:16:20,153 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.decorators.SharedProjectDecorator$2@3e83a4bf, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.decorators.SharedProjectDecorator.updateDecoratorsAsync(SharedProjectDecorator.java:156)
+	at de.fu_berlin.inf.dpp.ui.decorators.SharedProjectDecorator.access$2(SharedProjectDecorator.java:155)
+	at de.fu_berlin.inf.dpp.ui.decorators.SharedProjectDecorator$1.sessionEnded(SharedProjectDecorator.java:93)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.sessionEnded(SarosSessionManager.java:718)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:349)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:333)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:16:20,156 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.decorators.SharedProjectFileDecorator$4@474fbc8b, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.decorators.SharedProjectFileDecorator.updateDecoratorsAsync(SharedProjectFileDecorator.java:251)
+	at de.fu_berlin.inf.dpp.ui.decorators.SharedProjectFileDecorator.updateDecoration(SharedProjectFileDecorator.java:246)
+	at de.fu_berlin.inf.dpp.ui.decorators.SharedProjectFileDecorator.access$2(SharedProjectFileDecorator.java:235)
+	at de.fu_berlin.inf.dpp.ui.decorators.SharedProjectFileDecorator$1.sessionEnded(SharedProjectFileDecorator.java:136)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.sessionEnded(SarosSessionManager.java:718)
+	at de.fu_berlin.inf.dpp.project.SarosSessionManager.stopSarosSession(SarosSessionManager.java:349)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:333)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+INFO  2014-04-18 12:16:20,160 (SarosSessionManager.java:353) session stopped
+DEBUG 2014-04-18 12:16:20,160 (SarosNet.java:383) pascal.borchert.games@googlemail.com/SarosA0398880 new connection state == DISCONNECTING
+ERROR 2014-04-18 12:16:20,174 (SarosNet.java:392) internal error in listener: de.fu_berlin.inf.dpp.communication.chat.single.SingleUserChatService$1@fa86091
+java.lang.NullPointerException
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:144)
+	at de.fu_berlin.inf.dpp.ui.widgets.chat.ChatControl$5.disconnected(ChatControl.java:278)
+	at de.fu_berlin.inf.dpp.communication.chat.AbstractChat.notifyJIDDisconnected(AbstractChat.java:72)
+	at de.fu_berlin.inf.dpp.communication.chat.single.SingleUserChat.setConnected(SingleUserChat.java:129)
+	at de.fu_berlin.inf.dpp.communication.chat.single.SingleUserChatService$1.connectionStateChanged(SingleUserChatService.java:60)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:289)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-18 12:16:20,180 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@415ccdad, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:289)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-04-18 12:16:20,345 (SarosNet.java:383)  new connection state == NOT_CONNECTED
+WARN  2014-04-18 12:16:20,345 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@61ba5de4, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:293)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+ERROR 2014-04-18 12:16:20,346 (Utils.java:177) Internal Error:
+java.lang.RuntimeException: java.lang.InterruptedException
+	at org.jivesoftware.smack.PacketCollector.nextResult(PacketCollector.java:138)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:550)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.util.concurrent.ArrayBlockingQueue.poll(Unknown Source)
+	at org.jivesoftware.smack.PacketCollector.nextResult(PacketCollector.java:135)
+	... 10 more
+DEBUG 2014-04-18 12:16:20,346 (UPnPServiceImpl.java:295) deleting existing port mappings
+ERROR 2014-04-18 12:16:20,348 (Utils.java:178) Original caller:
+StackTrace:
+	at de.fu_berlin.inf.dpp.util.Utils.wrapSafe(Utils.java:169)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:322)
+	at de.fu_berlin.inf.dpp.ui.model.roster.RosterEntryElement.isSarosSupported(RosterEntryElement.java:146)
+	at de.fu_berlin.inf.dpp.ui.model.roster.RosterEntryElement.getImage(RosterEntryElement.java:112)
+	at de.fu_berlin.inf.dpp.ui.model.TreeLabelProvider.update(TreeLabelProvider.java:28)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:152)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:953)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1033)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:485)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2167)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updateChildren(AbstractTreeViewer.java:2753)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1923)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefreshStruct(AbstractTreeViewer.java:1930)
+	at org.eclipse.jface.viewers.TreeViewer.internalRefreshStruct(TreeViewer.java:721)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1898)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1855)
+	at org.eclipse.jface.viewers.StructuredViewer$8.run(StructuredViewer.java:1535)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:403)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1404)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1533)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:555)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1490)
+	at de.fu_berlin.inf.nebula.utils.ViewerUtils$8.run(ViewerUtils.java:230)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)

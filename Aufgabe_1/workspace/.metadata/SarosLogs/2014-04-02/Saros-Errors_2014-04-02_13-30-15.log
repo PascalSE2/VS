@@ -1,0 +1,539 @@
+WARN  2014-04-02 13:29:39,589 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:29:39,683 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:30:01,927 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:30:01,958 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:30:18,574 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /141.22.64.13:0
+WARN  2014-04-02 13:30:18,574 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+ERROR 2014-04-02 13:35:06,911 (RosterUtils.java:506) discovery for service 'googlemail.com' failed
+feature-not-implemented(501)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:604)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:570)
+	at de.fu_berlin.inf.dpp.net.util.RosterUtils.getMultiUserChatService(RosterUtils.java:504)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getMUCService(MUCNegotiationManager.java:149)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getOwnPreferences(MUCNegotiationManager.java:106)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.MultiUserChatService.createChat(MultiUserChatService.java:95)
+	at de.fu_berlin.inf.dpp.ui.widgets.chat.ChatRoomsComposite$3$2.run(ChatRoomsComposite.java:169)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:35:06,943 (MultiUserChatService.java:125) MUC service is not available, aborting connection request
+ERROR 2014-04-02 13:35:11,278 (RosterUtils.java:506) discovery for service 'googlemail.com' failed
+feature-not-implemented(501)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:604)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverItems(ServiceDiscoveryManager.java:570)
+	at de.fu_berlin.inf.dpp.net.util.RosterUtils.getMultiUserChatService(RosterUtils.java:504)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getMUCService(MUCNegotiationManager.java:149)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager.getOwnPreferences(MUCNegotiationManager.java:106)
+	at de.fu_berlin.inf.dpp.communication.chat.muc.negotiation.MUCNegotiationManager$1.considerClientPreferences(MUCNegotiationManager.java:67)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.determineSessionParameters(OutgoingSessionNegotiation.java:412)
+	at de.fu_berlin.inf.dpp.invitation.OutgoingSessionNegotiation.start(OutgoingSessionNegotiation.java:193)
+	at de.fu_berlin.inf.dpp.ui.eventhandler.NegotiationHandler$OutgoingInvitationJob.run(NegotiationHandler.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+WARN  2014-04-02 13:35:11,793 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:35:41,801 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+ERROR 2014-04-02 13:35:43,124 (Socks5Transport.java:352) [SOCKS5] Wrapping bidirectional stream timed out in Request! Shouldn't have happened.
+ERROR 2014-04-02 13:35:48,197 (Socks5Transport.java:352) [SOCKS5] Wrapping bidirectional stream timed out in Request! Shouldn't have happened.
+WARN  2014-04-02 13:36:11,807 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:36:41,820 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:37:11,824 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:37:41,840 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:38:11,856 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:38:41,872 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:39:11,888 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:39:41,904 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:40:11,907 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:40:41,912 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:40:47,333 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:47,333 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:51,021 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:51,021 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:51,021 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:54,084 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:54,084 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:54,365 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:40:54,365 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:11,924 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:41:12,034 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:12,034 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:14,617 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:14,617 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:16,898 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:16,898 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:18,148 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:18,148 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:18,148 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:18,148 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:33,257 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:41,934 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:41:52,669 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:41:59,591 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:05,856 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:05,856 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:11,950 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:42:16,122 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:16,122 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:16,122 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:16,122 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:26,395 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:26,395 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:38,020 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:38,020 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:38,020 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:38,020 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:39,734 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:39,734 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:39,734 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:41,953 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:42:52,223 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:42:52,223 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:43:11,961 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:43:41,978 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:44:06,469 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:06,469 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:09,422 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:09,422 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:11,234 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:11,234 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:11,234 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:11,234 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:11,984 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:44:14,031 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:16,768 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:21,191 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:21,191 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:21,191 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:33,752 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:33,752 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:33,971 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:33,971 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:36,393 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:36,393 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:36,627 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:36,627 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:44:41,987 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:45:12,003 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:45:14,237 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:14,237 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:35,722 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:35,722 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:41,316 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:42,019 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:45:43,175 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:43,175 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:44,363 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:44,363 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:44,363 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:44,363 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:46,276 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:49,562 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:49,562 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:49,562 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:55,468 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:45:55,468 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:12,033 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:46:14,462 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:14,462 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:21,103 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:21,103 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:28,494 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:28,494 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:30,697 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:30,697 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:46:42,041 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:47:03,322 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:09,335 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:12,053 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:47:17,633 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:17,633 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:17,633 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:18,883 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:18,883 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:22,696 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:22,696 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:24,586 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:47:24,586 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:49:41,858 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:49:41,858 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:49:59,680 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:49:59,680 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:50:45,275 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:50:45,275 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:50:45,525 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:50:45,525 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:51:09,509 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:51:09,509 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:51:14,041 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:51:18,356 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:51:59,419 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:51:59,419 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:51:59,419 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:27,547 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:27,547 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:30,625 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:30,625 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:38,516 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:38,516 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:43,485 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:48,274 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:51,274 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:52:51,274 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:04,790 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:04,790 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:04,790 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:04,790 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:10,515 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:10,515 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:19,640 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:19,640 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:19,640 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:19,640 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:26,722 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:26,722 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:46,472 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:46,472 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:46,472 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:46,472 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:53,936 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:53:53,936 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:08,123 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:08,123 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:08,123 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:08,123 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:09,187 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:09,187 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:09,187 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:23,592 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:23,592 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:26,451 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:26,451 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:35,248 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:35,248 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:35,248 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:35,248 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:48,126 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:48,126 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:59,736 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:59,736 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:59,736 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:54:59,736 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:09,614 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:09,614 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:15,818 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:15,818 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:15,818 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:15,818 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:23,679 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:23,679 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:23,679 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:42,026 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:42,026 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:43,994 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:43,994 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:43,994 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:43,994 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,088 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,088 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,229 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,229 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,229 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,229 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,260 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,260 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,276 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,276 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,463 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,463 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,463 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,463 (NullSarosSession.java:64) unexpected method call
+WARN  2014-04-02 13:55:44,541 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@8d31915, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:289)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-04-02 13:55:44,713 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@68fce65a, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:293)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)

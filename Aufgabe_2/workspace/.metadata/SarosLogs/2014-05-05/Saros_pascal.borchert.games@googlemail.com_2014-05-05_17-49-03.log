@@ -1,0 +1,53 @@
+INFO  2014-05-05 17:48:40,734 (Saros.java:256) Starting Saros 13.12.6 running:
+  Java Version: 1.8.0
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.9.100.v20131218-1515
+  Operating System: Windows 8.1 (6.3)
+  Hardware Architecture: amd64
+INFO  2014-05-05 17:48:40,832 (XMPPAccountStore.java:103) loaded 1 accounts
+INFO  2014-05-05 17:48:40,909 (PreferenceInitializer.java:53) initializing preference default values
+DEBUG 2014-05-05 17:48:40,932 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@23940f86, de.fu_berlin.inf.dpp.net.internal.IBBTransport@66153688]
+DEBUG 2014-05-05 17:48:41,038 (StreamServiceManager.java:225) StreamServices added:
+  SendFile
+  AudioService
+  VideoSharing
+DEBUG 2014-05-05 17:48:41,188 (SarosAnnotation.java:112) resetting annotation colors
+WARN  2014-05-05 17:48:41,795 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-05 17:48:41,811 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-05 17:48:48,082 (SharedDocumentProvider.java:79) SharedDocumentProvider created by Eclipse
+WARN  2014-05-05 17:48:54,619 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-05 17:48:54,636 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-05 17:48:58,007 (WhiteboardManager.java:108) WhiteboardManager instantiated
+DEBUG 2014-05-05 17:48:58,077 (DocumentRecord.java:93) Added Node: attr(139930493806936509) name=svg
+DEBUG 2014-05-05 17:48:58,422 (SarosNet.java:423) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2014-05-05 17:48:59,616 (SarosNet.java:433) found interface addresses: [192.168.56.1, 192.168.178.42, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5]
+DEBUG 2014-05-05 17:48:59,761 (SarosNet.java:383)  new connection state == CONNECTING
+DEBUG 2014-05-05 17:49:01,681 (StunServiceImpl.java:173) discovered public WAN-IP: 2.240.122.138 through interface 192.168.178.42
+DEBUG 2014-05-05 17:49:01,946 (SarosNet.java:383) pascal.borchert.games@googlemail.com/Saros50A5B45C new connection state == CONNECTED
+DEBUG 2014-05-05 17:49:01,947 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@23940f86, de.fu_berlin.inf.dpp.net.internal.IBBTransport@66153688]
+DEBUG 2014-05-05 17:49:01,959 (SkypeManager.java:286) Refreshing Skype username cache...
+WARN  2014-05-05 17:49:10,979 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-05-05 17:49:33,758 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-05 17:50:03,777 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
