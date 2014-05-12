@@ -1,0 +1,53 @@
+
+package web_sensor;
+
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java-Klasse für nachricht.
+ * 
+ * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="nachricht">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="Election"/>
+ *     &lt;enumeration value="OK"/>
+ *     &lt;enumeration value="Koordinator"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
+ */
+@XmlType(name = "nachricht")
+@XmlEnum
+public enum Nachricht {
+
+    @XmlEnumValue("Election")
+    ELECTION("Election"),
+    OK("OK"),
+    @XmlEnumValue("Koordinator")
+    KOORDINATOR("Koordinator");
+    private final String value;
+
+    Nachricht(String v) {
+        value = v;
+    }
+
+    public String value() {
+        return value;
+    }
+
+    public static Nachricht fromValue(String v) {
+        for (Nachricht c: Nachricht.values()) {
+            if (c.value.equals(v)) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException(v);
+    }
+
+}

@@ -1,0 +1,62 @@
+WARN  2014-05-12 10:02:40,830 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:02:40,830 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:02:45,283 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:02:45,283 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:02:57,745 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /141.22.84.151:0
+WARN  2014-05-12 10:02:57,745 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-05-12 10:03:18,526 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-12 10:03:48,543 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-12 10:04:18,559 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-12 10:30:53,813 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:30:53,813 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:30:53,969 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@225f6d54, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:289)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-12 10:30:54,126 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@524b0167, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:293)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)

@@ -1,0 +1,211 @@
+INFO  2014-05-11 22:33:44,430 (Saros.java:256) Starting Saros 13.12.6 running:
+  Java Version: 1.8.0
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.9.100.v20131218-1515
+  Operating System: Windows 8.1 (6.3)
+  Hardware Architecture: amd64
+INFO  2014-05-11 22:33:44,462 (XMPPAccountStore.java:103) loaded 1 accounts
+INFO  2014-05-11 22:33:44,494 (PreferenceInitializer.java:53) initializing preference default values
+DEBUG 2014-05-11 22:33:44,504 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@365553de, de.fu_berlin.inf.dpp.net.internal.IBBTransport@34a0ef00]
+DEBUG 2014-05-11 22:33:44,538 (StreamServiceManager.java:225) StreamServices added:
+  SendFile
+  AudioService
+  VideoSharing
+DEBUG 2014-05-11 22:33:44,594 (SarosAnnotation.java:112) resetting annotation colors
+WARN  2014-05-11 22:33:44,833 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 22:33:44,849 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-11 22:33:47,423 (SharedDocumentProvider.java:79) SharedDocumentProvider created by Eclipse
+WARN  2014-05-11 22:33:51,226 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 22:33:51,241 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-11 22:33:53,313 (WhiteboardManager.java:108) WhiteboardManager instantiated
+DEBUG 2014-05-11 22:33:53,387 (DocumentRecord.java:93) Added Node: attr(139984043337569292) name=svg
+DEBUG 2014-05-11 22:33:53,808 (SarosNet.java:423) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2014-05-11 22:33:53,967 (SarosNet.java:433) found interface addresses: [192.168.56.1, 192.168.178.42, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5]
+DEBUG 2014-05-11 22:33:54,029 (SarosNet.java:383)  new connection state == CONNECTING
+DEBUG 2014-05-11 22:33:54,404 (StunServiceImpl.java:173) discovered public WAN-IP: 2.240.243.177 through interface 192.168.178.42
+DEBUG 2014-05-11 22:33:55,264 (SarosNet.java:383) pascal.borchert.games@googlemail.com/SarosCE9C15B3 new connection state == CONNECTED
+DEBUG 2014-05-11 22:33:55,264 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@365553de, de.fu_berlin.inf.dpp.net.internal.IBBTransport@34a0ef00]
+DEBUG 2014-05-11 22:33:55,264 (SkypeManager.java:286) Refreshing Skype username cache...
+WARN  2014-05-11 22:34:04,264 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-05-11 22:34:26,780 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:34:56,810 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailwF9566C1F server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:35:26,826 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailwF9566C1F server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:35:56,842 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:36:26,858 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailwF9566C1F server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-05-11 22:42:43,368 (DiscoveryManager.java:101) clearing cache entry of contact gabrielwilde@gmail.com/messaging-smgmailwF9566C1F but cache entry is empty (a discovery is still running or the last one failed)
+WARN  2014-05-11 22:42:43,541 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailwF9566C1F server: xmpp.l.google.com
+service-unavailable(503)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:557)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:43:13,560 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:58:22,269 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailw50B917CD server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:58:52,274 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:59:22,286 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailw50B917CD server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 22:59:52,302 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailw50B917CD server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 23:00:22,318 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 23:00:52,334 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailw50B917CD server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-05-11 23:10:19,589 (DiscoveryManager.java:101) clearing cache entry of contact gabrielwilde@gmail.com/messaging-smgmailw50B917CD but cache entry is empty (a discovery is still running or the last one failed)
+WARN  2014-05-11 23:10:19,781 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/messaging-smgmailw50B917CD server: xmpp.l.google.com
+service-unavailable(503)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:557)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 23:10:49,797 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

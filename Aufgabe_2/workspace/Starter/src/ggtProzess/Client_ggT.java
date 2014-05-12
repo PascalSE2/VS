@@ -61,8 +61,6 @@ public class Client_ggT {
                 @Override
                 public void run() {
 
-                    Client_ggT.getKoordinatorRef().ggT_ProzessAbmeldung(Client_ggT.getName_id());
-
                     if (Client_ggT.getGgtRef().getLinker_channel_reader() != null) {
                         Client_ggT.getGgtRef().getLinker_channel_reader().setRunning(false);
                     }
@@ -70,6 +68,10 @@ public class Client_ggT {
                     if (Client_ggT.getGgtRef().getRechter_channel_reader() != null) {
                         Client_ggT.getGgtRef().getRechter_channel_reader().setRunning(false);
                     }
+
+                    
+                    Client_ggT.getKoordinatorRef().ggT_ProzessAbmeldung(Client_ggT.getName_id());
+
 
 //                    Client_ggT.getOrb().shutdown(true);
                     System.out.println("ggtProzess shutdown(ShutdownHook)");

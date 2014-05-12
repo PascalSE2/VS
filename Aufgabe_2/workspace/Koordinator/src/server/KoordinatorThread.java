@@ -30,7 +30,8 @@ public class KoordinatorThread implements Runnable {
 
     @Override
     public void run() {
-        int anz_rand = ((int) (Math.random()) * max + min + 1);
+        int anz_rand = ((int) (Math.random()) * max + min);
+        System.out.println(anz_rand);
         int rand = 0;
         int sequenz = 1;
         ggT_Prozess rand_ggT_Prozess;
@@ -49,6 +50,7 @@ public class KoordinatorThread implements Runnable {
 
         // suche zufaehlingen Prozess und starte Terminierungsabfrage.
         while (this.run) {
+            this.koordinator_ref.getTerminierungs_lock().lock();
             rand = (int) Math.random() * ggT_ProzessMap.size() + 1;
 
             try {
@@ -72,7 +74,13 @@ public class KoordinatorThread implements Runnable {
                     rand_ggT_Prozess.addLinkerChannel(msg);
                     System.out.println("sende Marker " + sequenz);
                 }
-
+                
+                try {
+                    this.koordinator_ref.getWait_for_all_answers().await();
+                } catch (InterruptedException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
             }
 
 //            if (koordinator_ref.isTerminiert()) {
@@ -82,6 +90,7 @@ public class KoordinatorThread implements Runnable {
 //            }
 
             sequenz++;
+            this.koordinator_ref.getTerminierungs_lock().unlock();
         }
     }
 

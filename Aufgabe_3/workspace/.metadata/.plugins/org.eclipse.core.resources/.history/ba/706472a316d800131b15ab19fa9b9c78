@@ -1,0 +1,87 @@
+package sensor;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
+import java.util.TimerTask;
+
+import net.java.dev.jaxb.array.StringArray;
+import web_sensor.SensorService;
+import web_sensor.WebSensor;
+
+public class DisplayRefresh extends TimerTask {
+
+    boolean running;
+
+    private Sensor sensor;
+    private String sensor_id;
+    HashMap<String, String[]> sensoren_display_map = new HashMap<String, String[]>();
+    ArrayList<String> zombies = new ArrayList<String>();
+
+public DisplayRefresh(Sensor sensor, String sensor_id, HashMap<String, String[]> sensoren_display_map) {
+        this.sensor = sensor;
+        this.sensor_id = sensor_id;
+        this.sensoren_display_map = sensoren_display_map;
+    }
+
+//    public DisplayRefresh(String sensor_id, HashMap<String, String[]> sensoren_display_map) {
+//        this.sensor_id = sensor_id;
+//        this.sensoren_display_map = sensoren_display_map;
+//        this.running = true;
+//    }
+    
+    @Override
+    public void run() {
+        
+        URL location;
+        SensorService service;
+        WebSensor sensor = null;
+        System.out.println("DisplayRefresh");
+//        while (running) {
+            for (String it : sensoren_display_map.keySet()) {
+                try {
+                    location = new URL(it);
+                    service = new SensorService(location);
+                    sensor = service.getWebSensorPort();
+                    sensor.trigger();
+                } catch (MalformedURLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (Exception e) {
+                    zombies.add(it);
+                }
+
+            }
+
+            for (String it : sensoren_display_map.keySet()) {
+
+                if (!it.equals(sensor_id) && !this.zombies.contains(it)) {
+                    for (String iter : this.zombies) {
+                        try {
+                            location = new URL(it);
+                            service = new SensorService(location);
+                            sensor = service.getWebSensorPort();
+                            sensor.removeSensor(iter, getStringArray(this.sensoren_display_map.get(iter)));
+                            System.out.println("entfernt");
+                        } catch (MalformedURLException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+//        }
+    }
+    
+    private StringArray getStringArray(String[] display_id) {
+        StringArray displays_array = new StringArray();
+
+        for (int i = 0; i < display_id.length; i++) {
+            displays_array.getItem().add(display_id[i]);
+        }
+
+        return displays_array;
+    }
+}

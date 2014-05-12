@@ -1,0 +1,12 @@
+package sensor;
+
+public class AnzeigeWirdVerwendetException extends Exception {
+
+
+
+	public AnzeigeWirdVerwendetException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+}

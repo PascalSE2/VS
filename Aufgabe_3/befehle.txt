@@ -1,0 +1,13 @@
+
+cd HAWMeterNW
+wsimport -keep http://localhost:9999/hawmetering/nw?wsdl
+
+cd ..\..\HAWMeterNO\src
+wsimport -keep http://localhost:9999/hawmetering/no?wsdl
+
+cd ..\..\HAWMeterSW\src
+wsimport -keep http://localhost:9999/hawmetering/sw?wsdl
+
+cd ..\..\HAWMeterSO\src
+wsimport -keep http://localhost:9999/hawmetering/so?wsdl
+

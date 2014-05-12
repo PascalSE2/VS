@@ -1,0 +1,86 @@
+package sensor;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import javax.xml.ws.Endpoint;
+
+import web_generate.sensor.SensorService;
+
+//import 
+
+
+public class CopyOfSensorStarter {
+
+	
+	
+	public static void main(String[] args) {
+		// beispiel aufrufe
+		// erster <Eigene URL> <Sensor1 URL> <Sensor2 URL> ....
+		// neu <Eigene URL> <Bekannte URL> <Sensor1 URL> <Sensor2 URL> .....
+		
+		URL location;
+		String[] anzeigen = null;
+		String eigene_sensor_id;
+		String bekannte_sensor_id;
+		Sensor eigener_sensor;
+		web_generate.sensor.Sensor bekannter_sensor;
+		web_generate.sensor.SensorService service;
+		
+		String operation[] = { "erster", "neu" };
+		int offset = 0;
+
+		for (int i = 0; i < args.length; i++) {
+			for (int j = 0; j < operation.length; j++) {
+				if (args[i].equalsIgnoreCase(operation[j])) {
+					offset = i;
+				}
+			}
+		}
+
+//		anzeigen = getArrayOfAnzeige(args, offset + 1);
+		
+		if (args[offset].equalsIgnoreCase("erster")) {
+			while(true){
+				try {
+					eigene_sensor_id = URLGenerate.getNextSensorURL();
+					eigener_sensor = new Sensor(eigene_sensor_id, anzeigen);
+					Endpoint.publish(eigene_sensor_id, eigener_sensor);
+					break;
+				} catch (Exception e) {
+					//Bind exception fangen.
+					System.err.println("Port vergeben, neuer Versuch wird gestartet!");
+				}
+			}
+			System.out.println(eigene_sensor_id+" ist nun Veroeffentlicht!");
+		}
+
+		if (args[offset].equalsIgnoreCase("neu")) {
+			try {
+				bekannte_sensor_id = args[args.length -1];
+				location = new URL(bekannte_sensor_id);
+				service = new SensorService(location);
+				bekannter_sensor = service.getSensorPort();
+				
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//todo: Koordinator ermittel und Anmelde methode verwenden.
+			
+		}
+	}
+	
+	private static String[] getArrayOfAnzeige(String args[], int offset) {
+		String anzeigen[] = new String[args.length - offset];
+		
+		for (int i = 0; i < anzeigen.length; i++) {
+			anzeigen[i] = args[offset + i];
+		}
+		
+		return anzeigen;
+	}
+	
+
+
+}

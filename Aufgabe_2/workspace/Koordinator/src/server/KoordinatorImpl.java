@@ -28,7 +28,7 @@ public class KoordinatorImpl extends KoordinatorPOA {
     private ReentrantLock starter_lock = new ReentrantLock();
     private ReentrantLock terminierungs_lock = new ReentrantLock();
     private Condition wait_for_all_process = ggt_process_lock.newCondition();
-//    private Condition wait_for_all_answers = terminierungs_lock.newCondition();
+    private Condition wait_for_all_answers = terminierungs_lock.newCondition();
     private LinkedBlockingQueue<Nachricht> terminierungs_queue = new LinkedBlockingQueue<Nachricht>();
 
     private String[] prozess_ids;
@@ -75,6 +75,10 @@ public class KoordinatorImpl extends KoordinatorPOA {
 //                scan = new Scan/ner(name_id);
 //                this.starterMap.get(scan.next()).destroy(Integer.parseInt(scan.next()));
                 temp = ggT_ProzessMap.remove(name_id);
+                if (this.terminierungsMap.containsKey(name_id)) {
+                    this.terminierungsMap.remove(name_id);
+                }
+                wait_for_all_answers.signal();
                 removeProcessFromRing(temp);
                 this.max_ggt_prozesse--;
             }
@@ -123,6 +127,7 @@ public class KoordinatorImpl extends KoordinatorPOA {
     }
 
     public boolean checkTerminierung(Nachricht msg) {
+        terminierungs_lock.lock();
         boolean terminiert = false;
         
         if (msg.name_id != null) {
@@ -140,14 +145,15 @@ public class KoordinatorImpl extends KoordinatorPOA {
 
         if (this.max_ggt_prozesse == terminierungsMap.size()) {
             terminiert = true;
-//            wait_for_all_answers.signal();
+
             for (String it : terminierungsMap.keySet()) {
                 if (!terminierungsMap.get(it).terminierung) {
                     terminiert = false;
+                    
                     break;
                 }
             }
-
+          
             terminierungsMap.clear();
 
             if (terminiert) {
@@ -155,9 +161,10 @@ public class KoordinatorImpl extends KoordinatorPOA {
                 reset();
                 System.out.println("Berechnung Beendet!");
             }
-
+            //TODO
+            wait_for_all_answers.signal();
         }
-
+        terminierungs_lock.unlock();
         return terminiert;
     }
     
@@ -209,7 +216,7 @@ public class KoordinatorImpl extends KoordinatorPOA {
             start_terminierung = new KoordinatorThread(this, min, max, min_delay, max_delay, terminierungs_periode, ggt);
             Thread start_thread = new Thread(start_terminierung);
             start_thread.start();
-
+            this.terminierungs_queue.clear();
             check_terminierung = new CheckTerminierungThread(terminierungs_queue, this);
             Thread check_thread = new Thread(check_terminierung);
             check_thread.start();
@@ -402,6 +409,14 @@ public class KoordinatorImpl extends KoordinatorPOA {
 
     public ggT_Prozess getHead() {
         return head;
+    }
+
+    public Condition getWait_for_all_answers() {
+        return wait_for_all_answers;
+    }
+
+    public ReentrantLock getTerminierungs_lock() {
+        return terminierungs_lock;
     }
 
     public void exit() {

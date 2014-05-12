@@ -30,7 +30,7 @@ public class CalculatorService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/calculator?wsdl");
+            url = new URL("http://localhost:8080/calculator1?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

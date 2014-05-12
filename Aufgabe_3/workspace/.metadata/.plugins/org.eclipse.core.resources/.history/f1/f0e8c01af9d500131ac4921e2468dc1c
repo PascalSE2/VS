@@ -1,0 +1,15 @@
+package client;
+
+import service.CalculatorService;
+import service.Calculator;
+
+public class CalculatorClient {
+	
+	public static void main(String[] args) {
+		CalculatorService service = new CalculatorService();
+		Calculator calculator = service.getCalculatorPort();
+		System.out.println("Summe: "+calculator.addValues(8, 2));
+		
+	}
+
+}

@@ -1,0 +1,73 @@
+package sensor_web_generate;
+
+import java.util.ArrayList;
+
+import javax.jws.WebParam;
+import javax.jws.WebResult;
+import javax.jws.WebService;
+import javax.jws.soap.SOAPBinding;
+import javax.jws.soap.SOAPBinding.Style;
+
+@WebService
+@SOAPBinding(style = Style.RPC)
+
+public class Sensor {
+	
+	private String sensor_id;
+	private String koordinator_id;
+	private String displays_id[];
+	private boolean koordinator_wahl;
+	
+	ArrayList<Sensor> registrierte_sensoren = new ArrayList<Sensor>();
+	
+	public Sensor(@WebParam(name = "sensor_id") String sensor_id,
+			 	  @WebParam(name = "anzeige_id") String[] anzeige_id) {
+		this.sensor_id = sensor_id;
+		this.displays_id = displays_id;
+	}
+
+	public void anmelden(@WebParam(name = "sensor_id") String sensor_id,
+						 @WebParam(name = "anzeige_id") String[] anzeige_id) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void abmelden(@WebParam(name = "sensor_id") String sensor_id) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void addSensor(@WebParam(name = "sensor_id") String sensor_id,
+						  @WebParam(name = "anzeige_id") String[] anzeige_id) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void removeSensor(@WebParam(name = "sensor_id") String sensor_id,
+							 @WebParam(name = "anzeige_id") String[] anzeige_id) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void starteKoordinatorWahl(){
+		
+	}
+
+	@WebResult(name = "sensor_id")
+	public String getKoordinator_id() {
+		return koordinator_id;
+	}
+
+	public void setKoordinator_id(String koordinator_id) {
+		this.koordinator_id = koordinator_id;
+	}
+	
+	public void trigger(Nachricht msg) {
+	
+	}
+
+}
+
+enum Nachricht{
+	Election, OK, Koordinator
+}

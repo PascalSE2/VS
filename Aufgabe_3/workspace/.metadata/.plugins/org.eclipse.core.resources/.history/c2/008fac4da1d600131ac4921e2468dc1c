@@ -1,0 +1,9 @@
+package sensor;
+
+public class AnzeigeNichtBekanntException extends Exception {
+
+	public AnzeigeNichtBekanntException(String message) {
+		super(message);
+	}
+
+}

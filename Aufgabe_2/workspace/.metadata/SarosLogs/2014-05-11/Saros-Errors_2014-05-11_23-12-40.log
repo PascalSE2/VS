@@ -1,0 +1,37 @@
+WARN  2014-05-11 23:12:32,606 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 23:12:32,609 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 23:12:37,152 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 23:12:37,152 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 23:12:48,919 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-05-11 23:13:10,425 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 23:30:25,989 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 23:30:26,004 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-11 23:30:26,208 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@671c9093, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:289)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-11 23:30:26,364 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@17cd7a06, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:293)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)

@@ -31,6 +31,7 @@ public class CheckTerminierungThread implements Runnable {
                 }
             }
         }
+        this.queue.clear();
     }
 
     public void setRunning(boolean running) {

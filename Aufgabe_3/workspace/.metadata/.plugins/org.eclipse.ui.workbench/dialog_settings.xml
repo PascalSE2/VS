@@ -16,6 +16,8 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
@@ -26,10 +28,11 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="E:\TI5\VS\Aufgabe_3\HAWMeter\HAWMeter\src"/>
+			<item value="E:\TI5\VS\Aufgabe_3"/>
 			<item value="E:\TI5\VS\Aufgabe_3\HAWMeter\src"/>
 			<item value="E:\TI5\VS\Aufgabe_3\jfreechart-1.0.17\source\org\jfree"/>
 			<item value="E:\TI5\VS\Aufgabe_3\HAWMeterClient\HAWMeterClient\src"/>
-			<item value="E:\TI5\VS\Aufgabe_3\HAWMeter\HAWMeter\src\hawmetering"/>
 		</list>
 	</section>
 </section>

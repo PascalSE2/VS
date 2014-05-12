@@ -1,0 +1,88 @@
+INFO  2014-05-12 10:02:40,394 (Saros.java:256) Starting Saros 13.12.6 running:
+  Java Version: 1.8.0
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.9.100.v20131218-1515
+  Operating System: Windows 8.1 (6.3)
+  Hardware Architecture: amd64
+INFO  2014-05-12 10:02:40,425 (XMPPAccountStore.java:103) loaded 1 accounts
+INFO  2014-05-12 10:02:40,457 (PreferenceInitializer.java:53) initializing preference default values
+DEBUG 2014-05-12 10:02:40,478 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@540b0448, de.fu_berlin.inf.dpp.net.internal.IBBTransport@50a691d3]
+DEBUG 2014-05-12 10:02:40,527 (StreamServiceManager.java:225) StreamServices added:
+  SendFile
+  AudioService
+  VideoSharing
+DEBUG 2014-05-12 10:02:40,583 (SarosAnnotation.java:112) resetting annotation colors
+WARN  2014-05-12 10:02:40,830 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:02:40,830 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-12 10:02:43,049 (SharedDocumentProvider.java:79) SharedDocumentProvider created by Eclipse
+WARN  2014-05-12 10:02:45,283 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:02:45,283 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-12 10:02:46,544 (WhiteboardManager.java:108) WhiteboardManager instantiated
+DEBUG 2014-05-12 10:02:46,600 (DocumentRecord.java:93) Added Node: attr(139988176659064847) name=svg
+DEBUG 2014-05-12 10:02:46,687 (SarosNet.java:423) started Socks5 proxy on port: 7777 [listening on all interfaces]
+DEBUG 2014-05-12 10:02:47,168 (SarosNet.java:433) found interface addresses: [192.168.56.1, 141.22.84.151, fe80:0:0:0:6916:72e8:fdbf:3bcd%wlan0, fe80:0:0:0:6162:f90:6766:5971%eth5, 2002:8d16:5497:0:0:0:8d16:5497]
+DEBUG 2014-05-12 10:02:47,177 (SarosNet.java:383)  new connection state == CONNECTING
+DEBUG 2014-05-12 10:02:47,935 (SarosNet.java:383) pascal.borchert.games@googlemail.com/SarosAE12E5F7 new connection state == CONNECTED
+DEBUG 2014-05-12 10:02:47,935 (DataTransferManager.java:444) used transport order for the current XMPP connection: [de.fu_berlin.inf.dpp.net.internal.Socks5Transport@540b0448, de.fu_berlin.inf.dpp.net.internal.IBBTransport@50a691d3]
+DEBUG 2014-05-12 10:02:47,937 (SkypeManager.java:286) Refreshing Skype username cache...
+WARN  2014-05-12 10:02:57,745 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /141.22.84.151:0
+WARN  2014-05-12 10:02:57,745 (StunServiceImpl.java:420) received no response from STUN server stunserver.org/132.177.123.6:3478 at local address /192.168.56.1:0
+WARN  2014-05-12 10:03:18,526 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-12 10:03:48,543 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-12 10:04:18,559 (DiscoveryManager.java:445) Service Discovery failed on recipient gabrielwilde@gmail.com/MessagingAe01cc205 server: xmpp.l.google.com
+No response from the server.: 
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:554)
+	at org.jivesoftware.smackx.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:512)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.performServiceDiscovery(DiscoveryManager.java:442)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.queryFeatureSupport(DiscoveryManager.java:379)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager.access$3(DiscoveryManager.java:346)
+	at de.fu_berlin.inf.dpp.net.discoverymanager.DiscoveryManager$2.run(DiscoveryManager.java:325)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2014-05-12 10:30:53,813 (NullSarosSession.java:64) unexpected method call
+WARN  2014-05-12 10:30:53,813 (NullSarosSession.java:64) unexpected method call
+DEBUG 2014-05-12 10:30:53,969 (SarosNet.java:383) pascal.borchert.games@googlemail.com/SarosAE12E5F7 new connection state == DISCONNECTING
+WARN  2014-05-12 10:30:53,969 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@225f6d54, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:289)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-05-12 10:30:54,126 (SarosNet.java:383)  new connection state == NOT_CONNECTED
+WARN  2014-05-12 10:30:54,126 (SWTUtils.java:144) could not execute runnable de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1$1@524b0167, UI thread is not available
+StackTrace:
+	at de.fu_berlin.inf.dpp.ui.util.SWTUtils.runSafeSWTAsync(SWTUtils.java:145)
+	at de.fu_berlin.inf.dpp.ui.widgets.ConnectionStateComposite$1.connectionStateChanged(ConnectionStateComposite.java:55)
+	at de.fu_berlin.inf.dpp.net.SarosNet.setConnectionState(SarosNet.java:390)
+	at de.fu_berlin.inf.dpp.net.SarosNet.disconnect(SarosNet.java:293)
+	at de.fu_berlin.inf.dpp.Saros$1.run(Saros.java:334)
+	at de.fu_berlin.inf.dpp.util.Utils$2.run(Utils.java:175)
+	at java.lang.Thread.run(Unknown Source)
+DEBUG 2014-05-12 10:30:54,126 (UPnPServiceImpl.java:295) deleting existing port mappings

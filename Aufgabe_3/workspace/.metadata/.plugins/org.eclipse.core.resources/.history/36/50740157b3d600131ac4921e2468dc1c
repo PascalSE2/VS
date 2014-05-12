@@ -1,0 +1,14 @@
+package sensor;
+
+public class AnzeigeNichtBekanntException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7500608924194248627L;
+
+	public AnzeigeNichtBekanntException(String message) {
+		super(message);
+	}
+
+}
