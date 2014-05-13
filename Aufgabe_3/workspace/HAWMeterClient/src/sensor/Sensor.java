@@ -39,7 +39,6 @@ public class Sensor {
     private volatile boolean koordinator_wahl;
     private String sensor_id;
     private String koordinator_id;
-    private String display_ip;
     private Timer wahl_timer;
     private Timer trigger_timmer;
     private WahlAlgorithmus wahl_task;
@@ -88,27 +87,27 @@ public class Sensor {
 //        }
 //    }
     
-    protected void initDisplay(String display_url) throws DisplayNichtBekanntException {
+    protected void initDisplays(String[] display_url) throws DisplayNichtBekanntException {
         HAWMeteringWebservice display;
         URL location;
         HAWMeteringWebserviceService service;
         
+        for (int i = 0; i < display_url.length; i++) {
             try {
-                location = new URL(display_url);
+                location = new URL(display_url[i]);
                 service = new HAWMeteringWebserviceService(location);
                 display = service.getHAWMeteringWebservicePort();
 
                 ((BindingProvider) display).getRequestContext().put(BindingProviderProperties.REQUEST_TIMEOUT, 5000);
                 ((BindingProvider) display).getRequestContext().put(BindingProviderProperties.CONNECT_TIMEOUT, 5000);
-
-                display_service_map.put(display_url, display);
-                this.display_belegung.put(display_url, false);
+                display_service_map.put(display_url[i], display);
+                this.display_belegung.put(display_url[i], false);
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }catch (Exception e) {
                 throw new DisplayNichtBekanntException(display_url + " : nicht bekannt!");
             }
-            
+        }
     }
 
     protected void startKoordinatorTimer() {
@@ -129,7 +128,7 @@ public class Sensor {
     }
 
     public synchronized void anmelden(@WebParam(name = "sensor_id") String sensor_id, @WebParam(name = "display_id") String[] display_id)
-            throws DisplayWirdVerwendetException, DisplayNichtBekanntException, URLVergebenException, KoordinatorWahlException {
+            throws DisplayWirdVerwendetException, URLVergebenException, KoordinatorWahlException {
        
         if (!this.sensor_id.equals(koordinator_id)) {
             stopWahlTimer();
@@ -159,18 +158,11 @@ public class Sensor {
                     this.map_lock.unlock();
                     throw new DisplayWirdVerwendetException(display_id[i] + " : wird verwendet!");
                 }
-            } else {
-                try {
-                    initDisplay(display_id[i]);
-                } catch (DisplayNichtBekanntException e) {
-                    this.map_lock.unlock();
-                    throw new DisplayNichtBekanntException(e.getMessage());
-                }     
-                
-            }
+            }   
         }
 
         addSensor(sensor_id, display_id);
+        
         updateSensorMap(sensor_id, display_id, true);
 
         // neuen Sensor aktuellen Zustand mitteilen
@@ -226,6 +218,8 @@ public class Sensor {
 
         if (sensor_id != null) {
             if (!this.sensoren_service_map.containsKey(sensor_id)) {
+                
+                
                 try {
                     URL location = new URL(sensor_id);
                     SensorService service = new SensorService(location);
@@ -233,10 +227,13 @@ public class Sensor {
 
                     ((BindingProvider) sensor).getRequestContext().put(BindingProviderProperties.REQUEST_TIMEOUT, REQUEST_TIME);
                     ((BindingProvider) sensor).getRequestContext().put(BindingProviderProperties.CONNECT_TIMEOUT, CONNECT_TIME);
+                    
 
+                    
+                    updateDisplaysBelegung(display_id, true);
                     this.sensoren_service_map.put(sensor_id, sensor);
                     this.sensoren_display_map.put(sensor_id, display_id);
-                    updateDisplaysBelegung(display_id, true);
+                    
                     System.out.println(sensor_id + " wurde hinzugefuegt!");
                 } catch (MalformedURLException e) {
                     // TODO Auto-generated catch block
@@ -256,19 +253,21 @@ public class Sensor {
         }
 
         if (sensor_id != null) {
+            
+            updateDisplaysBelegung(display_id, false);
             if (this.sensoren_service_map.containsKey(sensor_id)) {
                 this.sensoren_service_map.remove(sensor_id);
-                this.sensoren_display_map.remove(sensor_id);
-                updateDisplaysBelegung(display_id, false);
+                this.sensoren_display_map.remove(sensor_id);            
                 System.out.println(sensor_id + " wurde entfernt!");
             }
         }
     }
 
-    private synchronized void updateDisplaysBelegung(String display_id[], boolean value) {
+    private synchronized void updateDisplaysBelegung(String display_id[], boolean value){
         for (int i = 0; i < display_id.length; i++) {
             if (display_belegung.containsKey(display_id[i])) {
                 display_belegung.put(display_id[i], value);
+                System.out.println("\nNutze Display : " + display_id[i]);
             }
         }
     }
@@ -315,6 +314,7 @@ public class Sensor {
                     this.display_service_map.get(display_id[i]).setValue(messwert);
                 } catch (Exception e) {
                     System.err.println(display_id[i] + " nicht erreichbar!");
+                    System.out.println(this.display_service_map.get(display_id[i]));
                 }
             }
         }

@@ -1,5 +1,8 @@
 wsimport -keep http://127.0.0.1:9999/hawmetering/nw?wsdl
-wsimport -keep http://192.168.56.1:8000/Sensor?wsdl
+wsimport -keep http://192.168.56.1:8000/Sensor?wsdl#
+wsimport -keep http://141.22.27.107:8000/Sensor?wsdl
+
+http://141.22.27.107:9999/hawmetering/nw
 
 cd TI5/VS/GitHub/VS/Aufgabe_3/workspace/HAWMeterClient/bin
 
@@ -13,7 +16,10 @@ start java sensor.SensorStarter http://141.22.27.107:8000/Sensor http://127.0.0.
 start java sensor.SensorStarter http://141.22.27.107:8000/Sensor http://0.0.0.0:9999/hawmetering/no
 
 
-http://141.22.27.107:9999/nw
+java sensor.SensorStarter http://141.22.27.107:8000/Sensor http://141.22.27.107:9999/hawmetering/nw
+
+
+
 
 cd TI5/VS/GitHub/VS/Aufgabe_3/HAWMeter
 

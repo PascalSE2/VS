@@ -6,7 +6,6 @@ import java.net.URL;
 import javax.xml.ws.Endpoint;
 
 import net.java.dev.jaxb.array.StringArray;
-import web_sensor.DisplayNichtBekanntException_Exception;
 import web_sensor.DisplayWirdVerwendetException_Exception;
 import web_sensor.KoordinatorWahlException_Exception;
 import web_sensor.SensorService;
@@ -55,21 +54,25 @@ public class SensorStarter {
 				}
 			}
 		}
-		
+
 		array_display_id = getArrayOfAnzeige(args, offset + 1);
 		
 		if (args[offset].equalsIgnoreCase("neu")) {
 //			eigener_sensor = new Sensor(eigene_sensor_id, array_display_id);
 			endpoint = publishSensor(true);
 			if (endpoint != null && endpoint.isPublished()) {
-//			    eigener_sensor.initDisplays();
-		        eigener_sensor.addSensor(eigene_sensor_id, array_display_id);         
-		        eigener_sensor.startKoordinatorTimer();
-		        System.out.println();
-                 for (int i = 0; i < array_display_id.length; i++) {
-                     System.out.println("Nutze Display : " + array_display_id[i]);
-                 }
-		         System.out.println("\nKoordinator wurde gestartet!\n"); 
+//			    
+		        try {
+		            eigener_sensor.initDisplays(array_display_id);
+                    eigener_sensor.addSensor(eigene_sensor_id, array_display_id);             
+                    eigener_sensor.startKoordinatorTimer();
+                    System.out.println();
+                    System.out.println("\nKoordinator wurde gestartet!\n"); 
+                } catch (DisplayNichtBekanntException e) {
+                    endpoint.stop();
+                    System.err.println(e.getMessage());
+                }
+
             }else {
                 System.out.println("Kein Port gefunden!");
             }
@@ -81,12 +84,10 @@ public class SensorStarter {
 				location = new URL(bekannte_sensor_id);
 				service = new SensorService(location);
 				bekannter_sensor = service.getWebSensorPort();
-
 				StringArray anzeigen_array = new StringArray();
 				for (int i = 0; i < array_display_id.length; i++) {
 					anzeigen_array.getItem().add(array_display_id[i]);
 				}
-				
 //				koordinator_id = bekannter_sensor.getKoordinatorId();
 //				eigener_sensor = new Sensor(eigene_sensor_id, koordinator_id);
 //				
@@ -106,18 +107,16 @@ public class SensorStarter {
 						endpoint = publishSensor(false);
 						if (endpoint != null && endpoint.isPublished()) {
 						    System.out.println("\n Koordinator: "+koordinator_id+"\n");
-//						    eigener_sensor.initDisplays();
+						    eigener_sensor.initDisplays(array_display_id);
 						    eigener_sensor.startWahlTimer();
-						koordinator.anmelden(eigene_sensor_id, anzeigen_array);
-				        for (int i = 0; i < array_display_id.length; i++) {
-				            System.out.println("\nNutze Display : " + array_display_id[i]);
-				        }
+						    koordinator.anmelden(eigene_sensor_id, anzeigen_array);
+//				        }
 						System.out.println("\nAnmeldung Erfolgreich!\n");
 						}else {
                             System.out.println("Kein Port gefunden!");
                         }
 						break;
-					} catch (DisplayNichtBekanntException_Exception e) {
+					} catch (DisplayNichtBekanntException e) {
 						System.err.println(e.getMessage());
                         if (eigener_sensor != null) {
                             eigener_sensor.stopWahlTimer(); 
