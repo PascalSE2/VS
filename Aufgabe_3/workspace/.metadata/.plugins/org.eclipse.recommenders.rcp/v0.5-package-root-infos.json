@@ -1,0 +1,158 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f8166655d74cfbc622390ca32f2b8966e2761b78",
+    "jarFileModificationDate": "2013-12-19T03:55:14+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fe38edb31145fe0dcd95b278c6069efac07cf2d6",
+    "jarFileModificationDate": "2013-12-19T04:13:06+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5e1750ab236a90fcdd48157472f3fa21f74ecec6",
+    "jarFileModificationDate": "2013-12-19T04:24:26+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "95dc9053062d68cde4e8c38494cc63aefd7b0a42",
+    "jarFileModificationDate": "2013-12-19T03:55:03+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/ext/sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e5f676ac3f301adf72fe2c99f20be3e3ec2aefca",
+    "jarFileModificationDate": "2013-12-19T04:24:17+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5e51ce82a095b4a23291b1cd35e6f1488efc5776",
+    "jarFileModificationDate": "2013-12-19T03:55:26+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8ef275643beeef867d8799caf702441be2697857",
+    "jarFileModificationDate": "2013-12-19T04:13:06+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c186ae37c41aa1f3dfa11d86bbd673c79a5c20ef",
+    "jarFileModificationDate": "2013-12-19T04:01:21+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8fc3af3d0e2d85398fa6af245a08a26848734731",
+    "jarFileModificationDate": "2013-12-19T04:24:00+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "be4124ecceb37230419f0f31ea6e7d50babb4973",
+    "jarFileModificationDate": "2013-12-19T03:50:04+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1826204b0e05aef412b595321866f7d190e0498d",
+    "jarFileModificationDate": "2013-12-19T04:00:05+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f90ebbb8198a741f1d0dd567c075195fd5af90f8",
+    "jarFileModificationDate": "2013-12-19T04:24:04+01:00",
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/charsets.jar",
+    "javaRuntime": true
+  }
+]

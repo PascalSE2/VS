@@ -51,7 +51,8 @@ public class Client_ggT {
             POA rootpoa;
             NamingContextExt ncRef;
             NameComponent path[];
-
+            System.out.println("Koordinator: "+ koordinatorName);
+            System.out.println("Starter: "+ starterName);
             System.out.println("Start ggT_Prozess: " + name_id);
 
             // Initialisierung des ORB

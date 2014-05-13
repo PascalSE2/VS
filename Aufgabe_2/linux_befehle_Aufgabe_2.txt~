@@ -1,0 +1,26 @@
+//Monitor
+cd TI5/VS/GitHub/VS/Aufgabe_2
+java -jar GGTMonitor.jar Monitor1 -ORBInitialHost localhost -ORBInitialPort 1050
+
+//Koordinator
+cd TI5/VS/GitHub/VS/Aufgabe_2/workspace/Koordinator/bin
+java server.Server -ORBInitialHost lab28 -ORBInitialPort 1050 Koordinator1
+
+//Starter
+cd TI5/VS/GitHub/VS/Aufgabe_2/workspace/Starter/bin
+java starter.Client_Starter -ORBInitialHost lab28 -ORBInitialPort 1050 Koordinator1 Starter1
+
+//Client
+cd TI5/VS/GitHub/VS/Aufgabe_2/workspace/Client/bin
+java client.Client -ORBInitialHost localhost -ORBInitialPort 1050 start Koordinator1 Monitor1 4-4 1000-000 1000 5
+
+"-ORBInitialHost <host> -ORBInitialPort <port> <KoordinatorName> <MonitorName> <IntervallAnz> <IntervallDelay> <TerminierungsPeriode> <ggT>";
+
+
+//ggtProzess
+java ggtProzess.Client_ggT -ORBInitialHost lab28 -ORBInitialPort 1050 Koordinator1 Starter1 1 0 5
+
+
+localhost
+
+orbd -ORBInitialPort 1050 -ORBInitialHost lab28

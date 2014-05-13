@@ -47,4 +47,5 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="server.KoordinatorImpl"/>
 <fullyQualifiedTypeName name="server.CheckTerminierungThread"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.COMM_FAILURE"/>
 </qualifiedTypeNameHistroy>

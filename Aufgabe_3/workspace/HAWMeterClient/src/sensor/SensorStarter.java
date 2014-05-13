@@ -62,7 +62,7 @@ public class SensorStarter {
 //			eigener_sensor = new Sensor(eigene_sensor_id, array_display_id);
 			endpoint = publishSensor(true);
 			if (endpoint != null && endpoint.isPublished()) {
-			    eigener_sensor.initDisplays();
+//			    eigener_sensor.initDisplays();
 		        eigener_sensor.addSensor(eigene_sensor_id, array_display_id);         
 		        eigener_sensor.startKoordinatorTimer();
 		        System.out.println();
@@ -106,7 +106,7 @@ public class SensorStarter {
 						endpoint = publishSensor(false);
 						if (endpoint != null && endpoint.isPublished()) {
 						    System.out.println("\n Koordinator: "+koordinator_id+"\n");
-						    eigener_sensor.initDisplays();
+//						    eigener_sensor.initDisplays();
 						    eigener_sensor.startWahlTimer();
 						koordinator.anmelden(eigene_sensor_id, anzeigen_array);
 				        for (int i = 0; i < array_display_id.length; i++) {

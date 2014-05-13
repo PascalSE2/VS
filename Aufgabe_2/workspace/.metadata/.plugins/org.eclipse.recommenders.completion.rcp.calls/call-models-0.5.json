@@ -1,0 +1,7 @@
+{
+  "/usr/java/jdk1.7.0_51/jre/lib/rt.jar": {
+    "location": "/usr/java/jdk1.7.0_51/jre/lib/rt.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/usr/java/jdk1.7.0_51/jre/lib/rt.jar\u0027. Neither fingerprint \u00275e1750ab236a90fcdd48157472f3fa21f74ecec6\u0027 nor symbolic name \u0027jre\u0027 are known."
+  }
+}

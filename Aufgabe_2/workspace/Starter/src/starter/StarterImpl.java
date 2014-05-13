@@ -28,7 +28,10 @@ public class StarterImpl extends StarterPOA {
         builder = builder.redirectOutput(ProcessBuilder.Redirect.INHERIT);
 
         for (int i = 0; i < anz; i++) {
-            builder.command("cmd", "/c", "java", "ggtProzess.Client_ggT", "-ORBInitialHost", host, "-ORBInitialPort", Integer.toString(port), koordinator_name,
+//            builder.command("cmd", "/c", "java", "ggtProzess.Client_ggT", "-ORBInitialHost", host, "-ORBInitialPort", Integer.toString(port), koordinator_name,
+//                    starter_name, Integer.toString(id), Integer.toString(min_delay), Integer.toString(max_delay));
+
+            builder.command("java", "ggtProzess.Client_ggT", "-ORBInitialHost", host, "-ORBInitialPort", Integer.toString(port), koordinator_name,
                     starter_name, Integer.toString(id), Integer.toString(min_delay), Integer.toString(max_delay));
 
             try {

@@ -25,7 +25,7 @@ public class ggT_ProzessImpl extends ggT_ProzessPOA {
     private volatile int ggt;
     private boolean marker_linker_channel;
     private boolean marker_rechter_channel;
-    private boolean terminierung;
+    private volatile boolean terminierung;
     private int sequenz_nummer;
     private String name_id;
     private int min_delay;
@@ -107,7 +107,7 @@ public class ggT_ProzessImpl extends ggT_ProzessPOA {
 
             }
 
-            if (msg.sequenz == this.sequenz_nummer) {
+//            if (msg.sequenz == this.sequenz_nummer) {
 
                 if (von_rechts) {
 //                System.out.println(this.name_id + " Marker: " + msg.sequenz + "von rechts");
@@ -119,17 +119,22 @@ public class ggT_ProzessImpl extends ggT_ProzessPOA {
                     this.marker_linker_channel = true;
                     id = this.linkerNachbarID;
                 }
-                if (this.marker_linker_channel && this.marker_rechter_channel) {
-                    Nachricht terminierungs_msg = new Nachricht();
+                
+                
+                Nachricht terminierungs_msg = new Nachricht();
 
-                    terminierungs_msg.typ = NachrichtenTyp.TERMINIERUNG;
-                    terminierungs_msg.terminierung = terminierung;
-                    terminierungs_msg.name_id = this.name_id;
+                terminierungs_msg.typ = NachrichtenTyp.TERMINIERUNG;
+                terminierungs_msg.terminierung = terminierung;
+                terminierungs_msg.name_id = this.name_id;
+                
+                
+                if (this.marker_linker_channel && this.marker_rechter_channel) {
                     
                     kRef.meldeTerminierungsStatus(terminierungs_msg);
-                    this.monitor.terminieren(name_id, id, terminierung);
                 }
-            }
+
+                this.monitor.terminieren(name_id, id, terminierung);
+//            }
         }
     }
 

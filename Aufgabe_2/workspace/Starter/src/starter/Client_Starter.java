@@ -43,7 +43,14 @@ public class Client_Starter {
             Runtime.getRuntime().addShutdownHook(new Thread() {
                 @Override
                 public void run() {
-                    Client_Starter.getKoordinatorRef().starterAbmeldung(Client_Starter.getStarter_name());
+                                      
+//                    try {
+                          Client_Starter.getKoordinatorRef().starterAbmeldung(Client_Starter.getStarter_name());
+
+//                    } catch (COMM_FAILURE) {
+//                        // TODO: handle exception
+//                    }
+                    
                     Client_Starter.getStarterRef().destroyAll();
                     Client_Starter.getOrb().shutdown(true);
                     System.out.println("Starter shutdown(ShutdownHook)");
