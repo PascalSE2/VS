@@ -22,6 +22,7 @@ public class WahlAlgorithmus extends TimerTask {
     @Override
     public void run() {
         if (!this.cancel()) {
+            this.sensor.getMap_lock().lock();
             System.out.println("Koordinator wahl wird gestartet!");
             sensor.setKoordinator_wahl(true);
             String next_koordinator = sensor_id;
@@ -52,6 +53,7 @@ public class WahlAlgorithmus extends TimerTask {
                 this.sensor.stopWahlTimer();
             }
             this.sensor.setKoordinator_wahl(false);
+            this.sensor.getMap_lock().unlock();
         }
     }
     

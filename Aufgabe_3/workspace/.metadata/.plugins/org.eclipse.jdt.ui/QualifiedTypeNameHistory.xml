@@ -26,10 +26,10 @@
 <fullyQualifiedTypeName name="sensor.URLVergebenException"/>
 <fullyQualifiedTypeName name="sensor.WahlAlgorithmus"/>
 <fullyQualifiedTypeName name="sensor.KoordinatorWahlException"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.concurrent.locks.ReadWriteLock"/>
 <fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantReadWriteLock"/>
 <fullyQualifiedTypeName name="javax.jws.WebMethod"/>
 <fullyQualifiedTypeName name="javax.jws.Oneway"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.ws.client.ClientTransportException"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

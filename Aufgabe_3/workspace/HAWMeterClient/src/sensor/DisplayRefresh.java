@@ -46,8 +46,9 @@ public class DisplayRefresh extends TimerTask {
         }
 
         for (String iter : this.zombies) {
-                this.sensor.removeSensor(iter, this.sensoren_display_map.get(iter));
+            this.sensor.removeSensor(iter, this.sensoren_display_map.get(iter));
         }
+
         this.zombies.clear();
         this.sensor.getMap_lock().unlock();
     }

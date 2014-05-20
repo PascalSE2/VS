@@ -1,9 +1,0 @@
-package sensor;
-
-public class DisplayRefresh {
-
-    public DisplayRefresh() {
-        // TODO Auto-generated constructor stub
-    }
-
-}

@@ -24,9 +24,9 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _DisplayNichtBekanntException_QNAME = new QName("web_sensor", "DisplayNichtBekanntException");
     private final static QName _DisplayWirdVerwendetException_QNAME = new QName("web_sensor", "DisplayWirdVerwendetException");
     private final static QName _KoordinatorWahlException_QNAME = new QName("web_sensor", "KoordinatorWahlException");
-    private final static QName _DisplayNichtBekanntException_QNAME = new QName("web_sensor", "DisplayNichtBekanntException");
     private final static QName _URLVergebenException_QNAME = new QName("web_sensor", "URLVergebenException");
 
     /**
@@ -34,14 +34,6 @@ public class ObjectFactory {
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link URLVergebenException }
-     * 
-     */
-    public URLVergebenException createURLVergebenException() {
-        return new URLVergebenException();
     }
 
     /**
@@ -53,6 +45,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link DisplayWirdVerwendetException }
+     * 
+     */
+    public DisplayWirdVerwendetException createDisplayWirdVerwendetException() {
+        return new DisplayWirdVerwendetException();
+    }
+
+    /**
      * Create an instance of {@link KoordinatorWahlException }
      * 
      */
@@ -61,11 +61,20 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DisplayWirdVerwendetException }
+     * Create an instance of {@link URLVergebenException }
      * 
      */
-    public DisplayWirdVerwendetException createDisplayWirdVerwendetException() {
-        return new DisplayWirdVerwendetException();
+    public URLVergebenException createURLVergebenException() {
+        return new URLVergebenException();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DisplayNichtBekanntException }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "web_sensor", name = "DisplayNichtBekanntException")
+    public JAXBElement<DisplayNichtBekanntException> createDisplayNichtBekanntException(DisplayNichtBekanntException value) {
+        return new JAXBElement<DisplayNichtBekanntException>(_DisplayNichtBekanntException_QNAME, DisplayNichtBekanntException.class, null, value);
     }
 
     /**
@@ -84,15 +93,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "web_sensor", name = "KoordinatorWahlException")
     public JAXBElement<KoordinatorWahlException> createKoordinatorWahlException(KoordinatorWahlException value) {
         return new JAXBElement<KoordinatorWahlException>(_KoordinatorWahlException_QNAME, KoordinatorWahlException.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DisplayNichtBekanntException }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "web_sensor", name = "DisplayNichtBekanntException")
-    public JAXBElement<DisplayNichtBekanntException> createDisplayNichtBekanntException(DisplayNichtBekanntException value) {
-        return new JAXBElement<DisplayNichtBekanntException>(_DisplayNichtBekanntException_QNAME, DisplayNichtBekanntException.class, null, value);
     }
 
     /**

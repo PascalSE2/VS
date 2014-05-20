@@ -1,9 +1,0 @@
-package sensor;
-
-public class KoordinatorWahlException extends Exception {
-
-	public KoordinatorWahlException(String message) {
-		super(message);
-	}
-
-}
