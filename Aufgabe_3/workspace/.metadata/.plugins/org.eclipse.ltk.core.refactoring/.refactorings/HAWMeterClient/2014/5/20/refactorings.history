@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;names&apos; in &apos;sensor.Sensor.initDisplays()&apos; to &apos;displays&apos;&#x0D;&#x0A;- Original project: &apos;HAWMeterClient&apos;&#x0D;&#x0A;- Original element: &apos;sensor.Sensor.initDisplays().names&apos;&#x0D;&#x0A;- Renamed element: &apos;names&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;names&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;sensor{Sensor.java[Sensor~initDisplays@names!2725!2768!2732!2736!\[QString;!0!false" name="displays" references="true" stamp="1400008586230" version="1.0"/>
-</session>
