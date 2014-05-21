@@ -138,7 +138,7 @@ int main(int argc, char** argv) {
 	sigaddset(&sigset, SIGUSR1);                //send_Timer ist abgelaufen
     sigprocmask(SIG_BLOCK, &sigset, NULL);
 
-	/*
+	///*
 
     //Erzeuge Datei zum Mittschnitt der Ereignisse
     file = fopen( "capture.dat", "w" );
@@ -147,7 +147,7 @@ int main(int argc, char** argv) {
       exit(1);
     }
 
-	*/
+	//*/
 
     //Framecounter initialisieren
     frameCounter = 0;
@@ -345,7 +345,4 @@ int main(int argc, char** argv) {
     return 0;
 }
 
-void initTimer(){
-
-}
 
