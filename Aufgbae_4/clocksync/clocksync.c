@@ -129,11 +129,11 @@ int main(int argc, char** argv) {
     //Umschaltung auf Real-time Scheduler.
     //Erfordert besondere Privilegien.
     //Deshalb hier deaktiviert.
-    /*
+    ///*
     memset(&schedp, 0, sizeof (schedp));
     schedp.sched_priority = PRIO;
     sched_setscheduler(0, POLICY, &schedp);
-    */
+    //*/
 
 
     //Lege fest, auf welche Signale beim
@@ -145,7 +145,7 @@ int main(int argc, char** argv) {
 	sigaddset(&sigset, SIGUSR1);                //send_Timer ist abgelaufen
     sigprocmask(SIG_BLOCK, &sigset, NULL);
 
-	///*
+	/*
 
     //Erzeuge Datei zum Mittschnitt der Ereignisse
     file = fopen( "capture.dat", "w" );
@@ -154,7 +154,7 @@ int main(int argc, char** argv) {
       exit(1);
     }
 
-	//*/
+	*/
 
     //Framecounter initialisieren
     frameCounter = 0;
