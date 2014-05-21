@@ -265,7 +265,7 @@ int main(int argc, char** argv) {
 				tspec.it_interval.tv_sec = 0;
 				tspec.it_interval.tv_nsec = 0;
 				nsec2timespec( &tspec.it_value, 0);
-				timer_settime(timer, TIMER_ABSTIME, &tspec, NULL);
+				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 				  
 				//Berechne den Zeitpunkt, an dem der Superframe begann
                 superframeStartTime = timespec2nsec( &now ) - beaconDelay;
@@ -292,7 +292,7 @@ int main(int argc, char** argv) {
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
-                nsec2timespec( &tspec.it_value, superframeStartTime + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1)))/*msec*/ *1000*1000 );
+                nsec2timespec( &tspec.it_value, superframeStartTime + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
                 timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				//Neue Zufahlszeit generieren
@@ -301,7 +301,7 @@ int main(int argc, char** argv) {
 				tspec.it_interval.tv_sec = 0;
 				tspec.it_interval.tv_nsec = 0;
 				nsec2timespec( &tspec.it_value, superframeStartTime + ZYKLUS + randBeaconDelay/*msec*/ *1000*1000 );
-				timer_settime(timer, TIMER_ABSTIME, &tspec, NULL);
+				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 				
                 snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
                 snprintf( output, sizeof(output), "---: %11.6f %-37s %9.3f\n", (nsecNow)/1.e9, buftmp, superframeStartTimeError/1.e6 );
