@@ -162,10 +162,11 @@ int main(int argc, char** argv) {
     //Merker fuer Programmende
     finished = 0;
 	
+	randBeaconDelay = randomNumber(BEACON_FENSTER);
 	//erster Beacon
 	tspec.it_interval.tv_sec = 0;
     tspec.it_interval.tv_nsec = 0;
-    nsec2timespec( &tspec.it_value, ZYKLUS /*msec*/ *1000*1000 );
+    nsec2timespec( &tspec.it_value, ZYKLUS + randBeaconDelay /*msec*/ *1000*1000 );
     timer_settime(beacon_timer, 0, &tspec, NULL);
 	
     while( finished == 0 ){
@@ -342,6 +343,7 @@ int main(int argc, char** argv) {
 
 
 
-    return 0;
+    
 	}
+	return 0;
 }
