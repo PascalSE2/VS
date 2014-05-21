@@ -114,8 +114,8 @@ int main(int argc, char** argv) {
     send_sigev.sigev_notify_thread_id = gettid();
 	
     //Erzeuge den Timer
-	timer_create(CLOCK, &sigev, &beacon_timer);
-    timer_create(CLOCK, &sigev, &send_timer);	
+	timer_create(CLOCK, &beacon_sigev, &beacon_timer);
+    timer_create(CLOCK, &send_sigev, &send_timer);	
 	
 
 
@@ -166,7 +166,7 @@ int main(int argc, char** argv) {
 	tspec.it_interval.tv_sec = 0;
     tspec.it_interval.tv_nsec = 0;
     nsec2timespec( &tspec.it_value, ZYKLUS /*msec*/ *1000*1000 );
-    timer_settime(timer, 0, &tspec, NULL);
+    timer_settime(beacon_timer, 0, &tspec, NULL);
 	
     while( finished == 0 ){
 
@@ -219,7 +219,7 @@ int main(int argc, char** argv) {
           case SIGALRM:
             //beacon_Timer ist abgelaufen.
 			//Senden eines Beacon
-            rc = encodeBeacon( buf, sizeof(buf), (lastBeacon + 1), randBeaconDelay, own_hostname );
+            rc = encodeBeacon( buf, sizeof(buf), (lastFrameCounter + 1), randBeaconDelay, own_hostname );
 			
 			if(rc < 0){
 				fprintf(stderr, "Fehler beim erstellen eines Beacon!");
@@ -292,7 +292,7 @@ int main(int argc, char** argv) {
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
-                nsec2timespec( &tspec.it_value, superframeStartTime + ((BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1)) /*msec*/ *1000*1000 );
+                nsec2timespec( &tspec.it_value, superframeStartTime + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1)))/*msec*/ *1000*1000 );
                 timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				//Neue Zufahlszeit generieren
