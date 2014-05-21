@@ -308,8 +308,6 @@ int main(int argc, char** argv) {
                 fputs( output, stdout );
                 fputs( output, file );
 				}
-				
-              }
             } else if( buf[0] == 'D' ){
               //Empfangenes Datagram ist Slot Message
 
@@ -334,7 +332,8 @@ int main(int argc, char** argv) {
     fclose( file );
 
     //und aufraeumen
-    timer_delete(timer);
+	timer_delete(beacon_timer);
+    timer_delete(send_timer);
 
 
     /* switch to normal */
