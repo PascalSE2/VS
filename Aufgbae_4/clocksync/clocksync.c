@@ -76,6 +76,13 @@ int main(int argc, char** argv) {
     char hostname[128];
 	char own_hostname[128];
 
+	rc = gethostname(own_hostname, sizeof(own_hostname));
+	
+	if( rc < 0 ){
+	fprintf(stderr, "Fehler bei gethostname!");
+      exit(1);
+    }
+	
     FILE* file;
 
     if( argc != 4 ){
