@@ -32,7 +32,7 @@
 #define BEACON_FENSTER 20LL
 #define ERSTE_SICHERHEITS_PAUSE 4LL
 #define ZEITSCHLITZ 4LL
-#defIne	ZWEITE_SICHERHEITS_PAUSE 12LL
+#define	ZWEITE_SICHERHEITS_PAUSE 12LL
 #define ZYKLUS (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + MAX_SLOTS * ZEITSCHLITZ + ZWEITE_SICHERHEITS_PAUSE)
 
 /*
@@ -86,7 +86,7 @@ int main(int argc, char** argv) {
     int port = atoi( argv[2]);
 	int slot  = atoi(argv[3]);
 	
-	if(slot >= MAX_SLOT || slot < 0){
+	if(slot >= MAX_SLOTS || slot < 0){
 		fprintf(stderr, "Falscher Slot! Moegliche Slots: 0-15");
 		exit(1);
 	}
@@ -328,7 +328,6 @@ int main(int argc, char** argv) {
 
             break;
         }
-    }
 
     ////////////////////////////////////////////////////
 
