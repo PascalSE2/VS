@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+E:\TI5\VS\GitHub\Aufgabe_3\workspace\.metadata\.plugins\org.eclipse.jdt.core
+3316048413.index
+4208061020.index
+1395432003.index
+332403776.index
+2744742364.index
+570617249.index
