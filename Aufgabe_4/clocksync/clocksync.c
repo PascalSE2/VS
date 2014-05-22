@@ -309,7 +309,7 @@ int main(int argc, char** argv) {
 				//Konfiguriere Beacon_Timer fuer naechsten Superframe.
 				tspec.it_interval.tv_sec = 0;
 				tspec.it_interval.tv_nsec = 0;
-				nsec2timespec( &tspec.it_value, (superframeStartTime + ZYKLUS + randBeaconDelay)/*msec*/ *1000*1000 );
+				nsec2timespec( &tspec.it_value, superframeStartTime + (ZYKLUS + randBeaconDelay)/*msec*/ *1000*1000 );
 				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 				
                 snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
