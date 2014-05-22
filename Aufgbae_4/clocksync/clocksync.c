@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
       exit(1);
     }
 	
-    FILE* file;
+    //FILE* file;
 
     if( argc != 4 ){
       printf("Usage: clocksyn <MulticastAdresse> <portnummer> <slot>\n");
@@ -237,7 +237,7 @@ int main(int argc, char** argv) {
 					fprintf(stderr, "Fehler beim senden des Beacon!");
 				}	
 			}
-			
+			printf("Beacon %i gesendet",(lastFrameCounter + 1));
             break;
           case SIGUSR1:
             //send_Timer ist abgelaufen.
@@ -251,7 +251,7 @@ int main(int argc, char** argv) {
 					fprintf(stderr, "Fehler beim senden einer Message!");
 				}	
 			}
-			
+			printf("Nachricht auf Slot %i gesendet",slot);
             break;
           case SIGINT:
             //Cntrl-C wurde gedrueckt.
@@ -262,13 +262,14 @@ int main(int argc, char** argv) {
             //Datagramm empfangen.
 
             if( buf[0] == 'B' ){
+			
               //Empfangenes Datagram ist ein Beacon
               rc = decodeBeacon( buf, &frameCounter, &beaconDelay, hostname, sizeof(hostname) );
               if( rc < 0 ){
                 printf( "### Invalid Beacon: '%s'\n", buf );
               } else if( frameCounter != lastFrameCounter ){
 				  lastFrameCounter = frameCounter;
-				  
+				  printf("Beacon %i empfangen",(lastFrameCounter));
 				//Beacon Timer Stopen. Das ist nicht zwingend notwendig da doppelte Beacons ignoriert werden und der Timer beim setzen der neuen Zeit auch gestoppt wird.
 				tspec.it_interval.tv_sec = 0;
 				tspec.it_interval.tv_nsec = 0;
@@ -314,22 +315,22 @@ int main(int argc, char** argv) {
                 snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
                 snprintf( output, sizeof(output), "---: %11.6f %-37s %9.3f\n", (nsecNow)/1.e9, buftmp, superframeStartTimeError/1.e6 );
                 fputs( output, stdout );
-                fputs( output, file );
+              //  fputs( output, file );
 				}
             } else if( buf[0] == 'D' ){
               //Empfangenes Datagram ist Slot Message
-
+			  printf("Nachricht empfangen");
               //Berechne nsec seit dem Empfang des ersten Beacons
               nsecNow = timespec2nsec( &now ) - timeOffset;
               snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
               snprintf( output, sizeof(output), "   : %11.6f %s\n", (nsecNow)/1.e9, buftmp );
               fputs( output, stdout );
-              fputs( output, file );
+          //   fputs( output, file );
             } else {
               //Unknown Message
               snprintf( output, sizeof(output), "### Unknown Message: '%s'\n", buf );
               fputs( output, stdout );
-              fputs( output, file );
+           //   fputs( output, file );
             }
 
             break;
@@ -337,7 +338,7 @@ int main(int argc, char** argv) {
 
     ////////////////////////////////////////////////////
 
-    fclose( file );
+  //  fclose( file );
 
     //und aufraeumen
 	timer_delete(beacon_timer);
