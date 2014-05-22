@@ -237,7 +237,7 @@ int main(int argc, char** argv) {
 					fprintf(stderr, "Fehler beim senden des Beacon!");
 				}	
 			}
-			printf("Beacon %i gesendet",(lastFrameCounter + 1));
+			printf("\nBeacon %i gesendet\n",(lastFrameCounter + 1));
             break;
           case SIGUSR1:
             //send_Timer ist abgelaufen.
@@ -251,7 +251,7 @@ int main(int argc, char** argv) {
 					fprintf(stderr, "Fehler beim senden einer Message!");
 				}	
 			}
-			printf("Nachricht auf Slot %i gesendet",slot);
+			printf("\nNachricht auf Slot %i gesendet\n",slot);
             break;
           case SIGINT:
             //Cntrl-C wurde gedrueckt.
@@ -269,7 +269,7 @@ int main(int argc, char** argv) {
                 printf( "### Invalid Beacon: '%s'\n", buf );
               } else if( frameCounter != lastFrameCounter ){
 				  lastFrameCounter = frameCounter;
-				  printf("Beacon %i empfangen",(lastFrameCounter));
+				  printf("\nBeacon %i empfangen\n",(lastFrameCounter));
 				//Beacon Timer Stopen. Das ist nicht zwingend notwendig da doppelte Beacons ignoriert werden und der Timer beim setzen der neuen Zeit auch gestoppt wird.
 				tspec.it_interval.tv_sec = 0;
 				tspec.it_interval.tv_nsec = 0;
@@ -319,7 +319,7 @@ int main(int argc, char** argv) {
 				}
             } else if( buf[0] == 'D' ){
               //Empfangenes Datagram ist Slot Message
-			  printf("Nachricht empfangen");
+			  printf("\nNachricht empfangen\n");
               //Berechne nsec seit dem Empfang des ersten Beacons
               nsecNow = timespec2nsec( &now ) - timeOffset;
               snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
