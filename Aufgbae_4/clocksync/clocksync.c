@@ -337,8 +337,9 @@ int main(int argc, char** argv) {
         }
 
     ////////////////////////////////////////////////////
-
-  //  fclose( file );
+	}
+	
+	  //  fclose( file );
 
     //und aufraeumen
 	timer_delete(beacon_timer);
@@ -348,10 +349,5 @@ int main(int argc, char** argv) {
     /* switch to normal */
     schedp.sched_priority = 0;
     sched_setscheduler(0, SCHED_OTHER, &schedp);
-
-
-
-    
-	}
 	return 0;
 }
