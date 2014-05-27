@@ -344,8 +344,7 @@ int main(int argc, char** argv) {
 	}
 
     //und aufraeumen
-	timer_delete(beacon_timer);
-	timer_delete(send_timer);
+	timer_delete(timer);
 
     /* switch to normal */
     schedp.sched_priority = 0;
