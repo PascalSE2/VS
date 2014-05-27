@@ -55,8 +55,10 @@ int main(int argc, char** argv) {
 
     int rc;
     int signr;
-    struct sigevent sigev;
-    timer_t timer;
+    struct sigevent beacon_sigev;
+	struct sigevent send_sigev;
+    timer_t beacon_timer;
+	timer_t send_timer;
     struct sched_param schedp;
     sigset_t sigset;
     uint64_t superframeStartTime;
@@ -83,6 +85,8 @@ int main(int argc, char** argv) {
 	fprintf(stderr, "Fehler bei gethostname!");
       exit(1);
     }
+	
+    //FILE* file;
 
     if( argc != 4 ){
       printf("Usage: clocksyn <MulticastAdresse> <portnummer> <slot>\n");
@@ -110,13 +114,21 @@ int main(int argc, char** argv) {
     //an die aktuelle Thread gesendet werden.
 	
 	//Signal für sende Beacon
-    sigev.sigev_notify = SIGEV_THREAD_ID | SIGEV_SIGNAL;
-    sigev.sigev_signo = SIGALRM;
-    sigev.sigev_notify_thread_id = gettid();
+    beacon_sigev.sigev_notify = SIGEV_THREAD_ID | SIGEV_SIGNAL;
+    beacon_sigev.sigev_signo = SIGALRM;
+    beacon_sigev.sigev_notify_thread_id = gettid();
+
+	//Signal fuer sende in der mitte des Slots
+    send_sigev.sigev_notify = SIGEV_THREAD_ID | SIGEV_SIGNAL;
+    send_sigev.sigev_signo = SIGUSR1;
+    send_sigev.sigev_notify_thread_id = gettid();
 	
     //Erzeuge den Timer
-	timer_create(CLOCK, &sigev, &timer);
+	timer_create(CLOCK, &beacon_sigev, &beacon_timer);
+    timer_create(CLOCK, &send_sigev, &send_timer);	
 	
+
+
     //Umschaltung auf Real-time Scheduler.
     //Erfordert besondere Privilegien.
     //Deshalb hier deaktiviert.
@@ -131,8 +143,9 @@ int main(int argc, char** argv) {
     //Aufruf von sigwaitinfo gewartet werden soll.
     sigemptyset(&sigset);
     sigaddset(&sigset, SIGIO);                  //Socket hat Datagramme empfangen
-    sigaddset(&sigset, SIGALRM);                //Timer ist abgelaufen
+    sigaddset(&sigset, SIGALRM);                //Beacon_Timer ist abgelaufen
     sigaddset(&sigset, SIGINT);                 //Cntrl-C wurde gedrueckt
+	sigaddset(&sigset, SIGUSR1);                //send_Timer ist abgelaufen
     sigprocmask(SIG_BLOCK, &sigset, NULL);
 
 	/*
@@ -164,7 +177,7 @@ int main(int argc, char** argv) {
 	tspec.it_interval.tv_sec = 0;
     tspec.it_interval.tv_nsec = 0;
     nsec2timespec( &tspec.it_value, (ZYKLUS + randBeaconDelay) /*msec*/ *1000*1000 );
-    timer_settime(timer, 0, &tspec, NULL);
+    timer_settime(beacon_timer, 0, &tspec, NULL);
 	
     while( finished == 0 ){
 
@@ -215,24 +228,28 @@ int main(int argc, char** argv) {
 
         switch( signr ){
           case SIGALRM:
-		  switch(state){
 		  
-			case SEND_BEACON:
-					//beacon_Timer ist abgelaufen.
-					//Senden eines Beacon
-					rc = encodeBeacon( buf, sizeof(buf), (lastFrameCounter + 1), randBeaconDelay, own_hostname );
-					
+			if(state == SEND_BEACON){
+				//beacon_Timer ist abgelaufen.
+				//Senden eines Beacon
+				rc = encodeBeacon( buf, sizeof(buf), (lastFrameCounter + 1), randBeaconDelay, own_hostname );
+				
+				if(rc < 0){
+					fprintf(stderr, "Fehler beim erstellen eines Beacon!");
+				}else{	
+					rc = sendMessage(fd, buf, mcastAdr, port);		
 					if(rc < 0){
-						fprintf(stderr, "Fehler beim erstellen eines Beacon!");
-					}else{	
-						rc = sendMessage(fd, buf, mcastAdr, port);		
-						if(rc < 0){
-							fprintf(stderr, "Fehler beim senden des Beacon!");
-						}	
-					}
-					printf("\nBeacon %i gesendet\n",(lastFrameCounter + 1));
-				break;
-			case SEND_DATA:
+						fprintf(stderr, "Fehler beim senden des Beacon!");
+					}	
+				}
+				printf("\nBeacon %i gesendet\n",(lastFrameCounter + 1));		
+			}
+			
+            break;
+			
+			case SIGUSR1:
+				
+				if(state == SEND_DATA){
 					//send_Timer ist abgelaufen.
 					//Senden einer Slot Message
 					rc = encodeSlotMessage( buf, sizeof(buf), slot, own_hostname );
@@ -253,15 +270,10 @@ int main(int argc, char** argv) {
 					tspec.it_interval.tv_sec = 0;
 					tspec.it_interval.tv_nsec = 0;
 					nsec2timespec( &tspec.it_value, superframeStartTime + (ZYKLUS + randBeaconDelay)/*msec*/ *1000*1000 );
-					timer_settime(timer, TIMER_ABSTIME, &tspec, NULL);
+					timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 					
 					state = SEND_BEACON;
-					break;
-			}
-            break;
-			
-			case SIGUSR1:
-				
+				}
 
             break;
           case SIGINT:
@@ -287,7 +299,7 @@ int main(int argc, char** argv) {
 				tspec.it_interval.tv_nsec = 0;
 				tspec.it_value.tv_sec = 0;
 				tspec.it_value.tv_nsec = 0;
-				timer_settime(timer, TIMER_ABSTIME, &tspec, NULL);
+				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 				  
 				//Berechne den Zeitpunkt, an dem der Superframe begann
                 superframeStartTime = timespec2nsec( &now ) - beaconDelay;
@@ -315,7 +327,7 @@ int main(int argc, char** argv) {
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
                 nsec2timespec( &tspec.it_value, superframeStartTime + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
-                timer_settime(timer, TIMER_ABSTIME, &tspec, NULL);
+                timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				state = SEND_DATA;
 				
@@ -344,7 +356,8 @@ int main(int argc, char** argv) {
 	}
 
     //und aufraeumen
-	timer_delete(timer);
+	timer_delete(beacon_timer);
+	timer_delete(send_timer);
 
     /* switch to normal */
     schedp.sched_priority = 0;
