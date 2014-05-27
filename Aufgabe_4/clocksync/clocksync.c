@@ -294,7 +294,12 @@ int main(int argc, char** argv) {
 				  lastFrameCounter = frameCounter;
 				  printf("\nBeacon %i empfangen\n",(lastFrameCounter));
 				  
-				  
+				 //Beacon Timer stoppen
+				tspec.it_interval.tv_sec = 0;
+				tspec.it_interval.tv_nsec = 0;
+				tspec.it_value.tv_sec = 0;
+				tspec.it_value.tv_nsec = 0;
+				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 				  
 				//Berechne den Zeitpunkt, an dem der Superframe begann
                 superframeStartTime = timespec2nsec( &now ) - beaconDelay;
