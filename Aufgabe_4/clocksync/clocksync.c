@@ -201,7 +201,7 @@ int main(int argc, char** argv) {
         switch( signr ){
           case SIGALRM:
 		  
-			switch(state){	  
+			switch(state){  
 				case SEND_BEACON:
 					//beacon_Timer ist abgelaufen.
 					//Senden eines Beacon
@@ -240,6 +240,8 @@ int main(int argc, char** argv) {
 					tspec.it_interval.tv_nsec = 0;
 					nsec2timespec( &tspec.it_value, superframeStartTime + (ZYKLUS + randBeaconDelay)/*msec*/ *1000*1000 );
 					timer_settime(timer, TIMER_ABSTIME, &tspec, NULL);
+					
+					state = SEND_BEACON;
 					break;
 			}
             break;
