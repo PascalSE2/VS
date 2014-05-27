@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;go&apos; to &apos;go_spiel&apos;&#x0D;&#x0A;- Original project: &apos;GoSpiel&apos;&#x0D;&#x0A;- Original element: &apos;GoSpiel/src/go&apos;&#x0D;&#x0A;- Renamed element: &apos;GoSpiel/src/go_spiel&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;go&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;go" name="go_spiel" qualified="false" references="true" stamp="1400866362159" textual="false" version="1.0"/>
+</session>
