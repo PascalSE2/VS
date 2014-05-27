@@ -131,7 +131,7 @@ int main(int argc, char** argv) {
     //Aufruf von sigwaitinfo gewartet werden soll.
     sigemptyset(&sigset);
     sigaddset(&sigset, SIGIO);                  //Socket hat Datagramme empfangen
-    sigaddset(&sigset, SIGALRM);                //Beacon_Timer ist abgelaufen
+    sigaddset(&sigset, SIGALRM);                //Timer ist abgelaufen
     sigaddset(&sigset, SIGINT);                 //Cntrl-C wurde gedrueckt
     sigprocmask(SIG_BLOCK, &sigset, NULL);
 
@@ -153,7 +153,7 @@ int main(int argc, char** argv) {
 	tspec.it_interval.tv_sec = 0;
     tspec.it_interval.tv_nsec = 0;
     nsec2timespec( &tspec.it_value, ZYKLUS + randBeaconDelay /*msec*/ *1000*1000 );
-    timer_settime(beacon_timer, 0, &tspec, NULL);
+    timer_settime(timer, 0, &tspec, NULL);
 	
     while( finished == 0 ){
 
