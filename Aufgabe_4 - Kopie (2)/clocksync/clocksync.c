@@ -243,7 +243,13 @@ int main(int argc, char** argv) {
 					}	
 				}
 				printf("\nBeacon %i gesendet\n",(lastFrameCounter + 1));		
-			}else if(state == SEND_DATA){
+			}
+			
+            break;
+			
+			case SIGUSR1:
+				
+				if(state == SEND_DATA){
 					//send_Timer ist abgelaufen.
 					//Senden einer Slot Message
 					rc = encodeSlotMessage( buf, sizeof(buf), slot, own_hostname );
@@ -268,11 +274,6 @@ int main(int argc, char** argv) {
 					
 					state = SEND_BEACON;
 				}
-			
-            break;
-			
-			case SIGUSR1:
-				
 
             break;
           case SIGINT:
@@ -326,7 +327,7 @@ int main(int argc, char** argv) {
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
                 nsec2timespec( &tspec.it_value, superframeStartTime + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
-                timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
+                timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				state = SEND_DATA;
 				
