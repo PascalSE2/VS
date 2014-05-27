@@ -172,7 +172,7 @@ int main(int argc, char** argv) {
     //Merker fuer Programmende
     finished = 0;
 	
-	randBeaconDelay = randomNumber(BEACON_FENSTER);
+	randBeaconDelay = BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE;
 	//erster Beacon
 	tspec.it_interval.tv_sec = 0;
     tspec.it_interval.tv_nsec = 0;
