@@ -329,11 +329,6 @@ int main(int argc, char** argv) {
             } else if( buf[0] == 'D' ){
               //Empfangenes Datagram ist Slot Message
 			  printf("\nNachricht empfangen\n");
-              //Berechne nsec seit dem Empfang des ersten Beacons
-              nsecNow = timespec2nsec( &now ) - timeOffset;
-             // snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
-             // snprintf( output, sizeof(output), "   : %11.6f %s\n", (nsecNow)/1.e9, buftmp );
-              fputs( output, stdout );
             } else {
               //Unknown Message
               snprintf( output, sizeof(output), "### Unknown Message: '%s'\n", buf );
