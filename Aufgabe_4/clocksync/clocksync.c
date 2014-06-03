@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
     char buf[1024];
     char buftmp[1024];
     char output[1024];
-	int first = 0;
+
     int rc;
     int signr;
     struct sigevent beacon_sigev;
@@ -61,8 +61,8 @@ int main(int argc, char** argv) {
 	timer_t send_timer;
     struct sched_param schedp;
     sigset_t sigset;
-    uint64_t superframeStartTime = 0;
-    //int64_t superframeStartTimeError;
+    uint64_t superframeStartTime;
+    int64_t superframeStartTimeError;
     uint64_t timeOffset;
     uint64_t nsecNow;
     int finished;
@@ -302,44 +302,37 @@ int main(int argc, char** argv) {
 				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 				  
 				//Berechne den Zeitpunkt, an dem der Superframe begann
-               // superframeStartTime = timespec2nsec( &now ) - beaconDelay;
+                superframeStartTime = timespec2nsec( &now ) - beaconDelay;
 
                 //Starte Zeitmessung mit dem ersten empfangenen Beacon
                 if( timeOffset == 0 ){
                   //Differenz zwischen der realen Zeit und der synchronisierten Anwendungszeit.
                   //Die synchronisierte Anwendungszeit ergibt sich aus der Beaconnummer.
                   //Sie wird gerechnet vom Startzeitpunkt des Superframes mit der Beaconnummer 0
-                  
+                  timeOffset = superframeStartTime - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
                 }
-				
-				timeOffset = timespec2nsec( &now ) - ((frameCounter * ZYKLUS) /* msec */ * 1000 * 1000) - beaconDelay;
-				
+
                 //Berechne nsec seit dem Empfang des ersten Beacons
                 nsecNow = timespec2nsec( &now ) - timeOffset;
 
                 //Berechne den Fehler zwischen dem tatsaechlichen Startzeitpunkt des Superframes und dem erwarteten Zeitpunkt
-                //superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
-				
-				if(first == 0){
-					superframeStartTime = timeOffset;
-					first = 1;
-				}
+                superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
 
 				//Synchronisiere die Zeit falls diese Uhr nachgeht
-				if(superframeStartTime > timeOffset){
-					superframeStartTime = timeOffset;
+				if(!superframeStartTimeError){
+					timeOffset += superframeStartTimeError;
 				}
 				
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
-                nsec2timespec( &tspec.it_value, superframeStartTime + ((frameCounter * ZYKLUS) + BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
+                nsec2timespec( &tspec.it_value, superframeStartTime + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
                 timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				state = SEND_DATA;
 				
-               // snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
-               // snprintf( output, sizeof(output), "---: %11.6f %-37s %9.3f\n", (nsecNow)/1.e9, buftmp, superframeStartTimeError/1.e6 );
+                snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
+                snprintf( output, sizeof(output), "---: %11.6f %-37s %9.3f\n", (nsecNow)/1.e9, buftmp, superframeStartTimeError/1.e6 );
                 fputs( output, stdout );
 				}
             } else if( buf[0] == 'D' ){
