@@ -332,7 +332,7 @@ int main(int argc, char** argv) {
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
-                nsec2timespec( &tspec.it_value, superframeStartTime + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
+                nsec2timespec( &tspec.it_value, superframeStartTime + ((frameCounter * ZYKLUS) /* msec */ * 1000 * 1000) + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
                 timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				state = SEND_DATA;
