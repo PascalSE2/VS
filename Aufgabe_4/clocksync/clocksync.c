@@ -318,7 +318,7 @@ int main(int argc, char** argv) {
                 nsecNow = timespec2nsec( &now ) - timeOffset;
 
                 //Berechne den Fehler zwischen dem tatsaechlichen Startzeitpunkt des Superframes und dem erwarteten Zeitpunkt
-                superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
+                //superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
 				
 				if(superframeStartTime == 0){
 					superframeStartTime = timeOffset;
@@ -337,8 +337,8 @@ int main(int argc, char** argv) {
 				
 				state = SEND_DATA;
 				
-                snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
-                snprintf( output, sizeof(output), "---: %11.6f %-37s %9.3f\n", (nsecNow)/1.e9, buftmp, superframeStartTimeError/1.e6 );
+               // snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
+               // snprintf( output, sizeof(output), "---: %11.6f %-37s %9.3f\n", (nsecNow)/1.e9, buftmp, superframeStartTimeError/1.e6 );
                 fputs( output, stdout );
 				}
             } else if( buf[0] == 'D' ){
