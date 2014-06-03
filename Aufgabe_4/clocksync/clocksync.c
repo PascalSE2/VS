@@ -265,7 +265,7 @@ int main(int argc, char** argv) {
 					
 					
 					//Neue Zufahlszeit generieren
-					randBeaconDelay = randomNumber(BEACON_FENSTER);
+					randBeaconDelay = randomNumber(BEACON_FENSTER *1000*1000);
 					//Konfiguriere Beacon_Timer fuer naechsten Superframe.
 					tspec.it_interval.tv_sec = 0;
 					tspec.it_interval.tv_nsec = 0;
@@ -319,7 +319,7 @@ int main(int argc, char** argv) {
                 superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
 
 				//Synchronisiere die Zeit falls diese Uhr nachgeht
-				if(!superframeStartTimeError){
+				if(superframeStartTimeError){
 					timeOffset += superframeStartTimeError;
 				}
 				
