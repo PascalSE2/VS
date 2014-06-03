@@ -301,19 +301,12 @@ int main(int argc, char** argv) {
 				tspec.it_value.tv_sec = 0;
 				tspec.it_value.tv_nsec = 0;
 				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
-				  
-				//Berechne den Zeitpunkt, an dem der Superframe begann
-               //superframeStartTime = timespec2nsec( &now ) - beaconDelay;
 
 			   
                 //Starte Zeitmessung mit dem ersten empfangenen Beacon
-                if( timeOffset == 0 ){
                   //Differenz zwischen der realen Zeit und der synchronisierten Anwendungszeit.
                   //Die synchronisierte Anwendungszeit ergibt sich aus der Beaconnummer.
-                  //Sie wird gerechnet vom Startzeitpunkt des Superframes mit der Beaconnummer 0
-               //   timeOffset = superframeStartTime - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
-                }
-								
+                  //Sie wird gerechnet vom Startzeitpunkt des Superframes mit der Beaconnummer 								
 				timeOffset = timespec2nsec( &now )- beaconDelay - ((frameCounter * ZYKLUS) /* msec */ * 1000 * 1000);
                   
 				if (timeOffset < superframeStartTime) {
@@ -325,12 +318,6 @@ int main(int argc, char** argv) {
 					first = 1;
 				}
 
-                //Berechne nsec seit dem Empfang des ersten Beacons
-                nsecNow = timespec2nsec( &now ) - timeOffset;
-
-                //Berechne den Fehler zwischen dem tatsaechlichen Startzeitpunkt des Superframes und dem erwarteten Zeitpunkt
-                //superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
-				
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
@@ -338,10 +325,6 @@ int main(int argc, char** argv) {
                 timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				state = SEND_DATA;
-				
-               // snprintf( buftmp, sizeof(buftmp), "'%s'", buf );
-               // snprintf( output, sizeof(output), "---: %11.6f %-37s %9.3f\n", (nsecNow)/1.e9, buftmp, superframeStartTimeError/1.e6 );
-                fputs( output, stdout );
 				}
             } else if( buf[0] == 'D' ){
               //Empfangenes Datagram ist Slot Message
