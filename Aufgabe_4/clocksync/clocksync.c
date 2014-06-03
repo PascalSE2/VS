@@ -296,7 +296,7 @@ int main(int argc, char** argv) {
 				  
 				 //Beacon Timer stoppen
 				tspec.it_interval.tv_sec = 0;
-				tspec.it_interval.tv_nsec = 0;
+				tspec.it_interval.tv_nsec = 0;z
 				tspec.it_value.tv_sec = 0;
 				tspec.it_value.tv_nsec = 0;
 				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
