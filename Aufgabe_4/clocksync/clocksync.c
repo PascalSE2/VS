@@ -229,7 +229,7 @@ int main(int argc, char** argv) {
         switch( signr ){
           case SIGALRM:
 		  
-			if( frameCounter != lastFrameCounter && state == SEND_BEACON){
+			if( frameCounter != lastFrameCounterz && state == SEND_BEACON){
 				//beacon_Timer ist abgelaufen.
 				//Senden eines Beacon
 				rc = encodeBeacon( buf, sizeof(buf), (lastFrameCounter + 1), randBeaconDelay, own_hostname );
@@ -290,7 +290,7 @@ int main(int argc, char** argv) {
               rc = decodeBeacon( buf, &frameCounter, &beaconDelay, hostname, sizeof(hostname) );
               if( rc < 0 ){
                 printf( "### Invalid Beacon: '%s'\n", buf );
-              } else if( frameCounter != lastFrameCounter && state == SEND_BEACON){
+              } else if( frameCounter != lastFrameCounterz){
 				  lastFrameCounter = frameCounter;
 				  printf("\nBeacon %i empfangen\n",(lastFrameCounter));
 				  
