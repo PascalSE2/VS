@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
     char buf[1024];
     char buftmp[1024];
     char output[1024];
-
+	int first = 0;
     int rc;
     int signr;
     struct sigevent beacon_sigev;
@@ -320,8 +320,9 @@ int main(int argc, char** argv) {
                 //Berechne den Fehler zwischen dem tatsaechlichen Startzeitpunkt des Superframes und dem erwarteten Zeitpunkt
                 //superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
 				
-				if(superframeStartTime == 0){
+				if(first == 0){
 					superframeStartTime = timeOffset;
+					first = 1;
 				}
 
 				//Synchronisiere die Zeit falls diese Uhr nachgeht
@@ -332,7 +333,7 @@ int main(int argc, char** argv) {
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
-                nsec2timespec( &tspec.it_value, superframeStartTime + ((frameCounter * ZYKLUS) /* msec */ * 1000 * 1000) + (BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
+                nsec2timespec( &tspec.it_value, superframeStartTime + ((frameCounter * ZYKLUS) + BEACON_FENSTER + ERSTE_SICHERHEITS_PAUSE + slot * ZEITSCHLITZ + (ZEITSCHLITZ >> 1))/*msec*/ *1000*1000 );
                 timer_settime(send_timer, TIMER_ABSTIME, &tspec, NULL);
 				
 				state = SEND_DATA;
