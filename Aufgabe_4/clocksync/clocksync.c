@@ -290,7 +290,7 @@ int main(int argc, char** argv) {
               rc = decodeBeacon( buf, &frameCounter, &beaconDelay, hostname, sizeof(hostname) );
               if( rc < 0 ){
                 printf( "### Invalid Beacon: '%s'\n", buf );
-              } else if( frameCounter != lastFrameCounter && state == SEND_BEACON){
+              } else if( frameCounter != lastFrameCounter){
 				  lastFrameCounter = frameCounter;
 				  printf("\nBeacon %i empfangen\n",(lastFrameCounter));
 				  
