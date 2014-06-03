@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
     int sourceport;
 
     char buf[1024];
-    char buftmp[1024];
+    //char buftmp[1024];
     char output[1024];
 
 	int first = 0;
@@ -63,9 +63,9 @@ int main(int argc, char** argv) {
     struct sched_param schedp;
     sigset_t sigset;
     uint64_t superframeStartTime;
-    int64_t superframeStartTimeError;
+  //  int64_t superframeStartTimeError;
     uint64_t timeOffset;
-    uint64_t nsecNow;
+   // uint64_t nsecNow;
     int finished;
 
     struct itimerspec tspec;
