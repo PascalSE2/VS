@@ -317,12 +317,13 @@ int main(int argc, char** argv) {
 
                 //Berechne den Fehler zwischen dem tatsaechlichen Startzeitpunkt des Superframes und dem erwarteten Zeitpunkt
                 superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
-
+				
+				/*
 				//Synchronisiere die Zeit falls diese Uhr nachgeht
 				if(superframeStartTimeError){
 					timeOffset += superframeStartTimeError;
 				}
-				
+				*/
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
