@@ -62,7 +62,7 @@ int main(int argc, char** argv) {
     struct sched_param schedp;
     sigset_t sigset;
     uint64_t superframeStartTime = 0;
-    int64_t superframeStartTimeError;
+    //int64_t superframeStartTimeError;
     uint64_t timeOffset;
     uint64_t nsecNow;
     int finished;
