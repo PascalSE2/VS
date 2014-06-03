@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
 	timer_t send_timer;
     struct sched_param schedp;
     sigset_t sigset;
-    uint64_t superframeStartTime;
+    uint64_t superframeStartTime = 0;
     int64_t superframeStartTimeError;
     uint64_t timeOffset;
     uint64_t nsecNow;
@@ -302,28 +302,33 @@ int main(int argc, char** argv) {
 				timer_settime(beacon_timer, TIMER_ABSTIME, &tspec, NULL);
 				  
 				//Berechne den Zeitpunkt, an dem der Superframe begann
-                superframeStartTime = timespec2nsec( &now ) - beaconDelay;
+               // superframeStartTime = timespec2nsec( &now ) - beaconDelay;
 
                 //Starte Zeitmessung mit dem ersten empfangenen Beacon
                 if( timeOffset == 0 ){
                   //Differenz zwischen der realen Zeit und der synchronisierten Anwendungszeit.
                   //Die synchronisierte Anwendungszeit ergibt sich aus der Beaconnummer.
                   //Sie wird gerechnet vom Startzeitpunkt des Superframes mit der Beaconnummer 0
-                  timeOffset = superframeStartTime - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
+                  
                 }
-
+				
+				timeOffset = timespec2nsec( &now ) - ((frameCounter * ZYKLUS) /* msec */ * 1000 * 1000) - beaconDelay;
+				
                 //Berechne nsec seit dem Empfang des ersten Beacons
                 nsecNow = timespec2nsec( &now ) - timeOffset;
 
                 //Berechne den Fehler zwischen dem tatsaechlichen Startzeitpunkt des Superframes und dem erwarteten Zeitpunkt
                 superframeStartTimeError = superframeStartTime - timeOffset - frameCounter * ZYKLUS /* msec */ * 1000 * 1000;
 				
-				/*
-				//Synchronisiere die Zeit falls diese Uhr nachgeht
-				if(superframeStartTimeError){
-					timeOffset += superframeStartTimeError;
+				if(superframeStartTime == 0){
+					superframeStartTime = timeOffset;
 				}
-				*/
+
+				//Synchronisiere die Zeit falls diese Uhr nachgeht
+				if(superframeStartTime > timeOffset){
+					superframeStartTime = timeOffset;
+				}
+				
 				//Konfiguriere Send_Timer so das bei der haelfte seines Slots gesendet wird.
                 tspec.it_interval.tv_sec = 0;
                 tspec.it_interval.tv_nsec = 0;
